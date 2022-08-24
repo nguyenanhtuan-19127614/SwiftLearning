@@ -13,6 +13,8 @@ class PriceView: UIView {
         
         let label = UILabel()
         label.text = "APPROX."
+        label.textColor = .lightGray
+        label.font = UIFont.boldSystemFont(ofSize: 12)
         return label
         
     }()
@@ -20,7 +22,11 @@ class PriceView: UIView {
     let approxPerMonth: UILabel = {
         
         let label = UILabel()
+
         label.text = "XXXXXXXX đ/ month"
+        label.textColor = UIColor(red: 60/255, green: 160/255, blue: 80/255, alpha: 1)
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        
         return label
         
     }()
@@ -29,6 +35,7 @@ class PriceView: UIView {
         
         let label = UILabel()
         label.text = "for XX months"
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
         
     }()
@@ -36,7 +43,7 @@ class PriceView: UIView {
     let approxContainer: UIView = {
        
         let view = UIView()
-        view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
         return view
         
     }()
@@ -45,6 +52,8 @@ class PriceView: UIView {
         
         let label = UILabel()
         label.text = "OFFER AMOUNT"
+        label.textColor = .lightGray
+        label.font = UIFont.boldSystemFont(ofSize: 12)
         return label
         
     }()
@@ -53,6 +62,7 @@ class PriceView: UIView {
         
         let label = UILabel()
         label.text = "XX,XXX,XXX đ"
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
         
     }()
@@ -60,7 +70,17 @@ class PriceView: UIView {
     let offerContainer: UIView = {
         
         let view = UIView()
-        view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)
+        view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
+    
+        return view
+        
+    }()
+    
+    let seperatorLine: UIView = {
+        
+        let view = UIView()
+        view.backgroundColor =  UIColor.gray
+    
         return view
         
     }()
@@ -76,6 +96,8 @@ class PriceView: UIView {
         offerContainer.addSubview(offerLabel)
         offerContainer.addSubview(offerValue)
         
+        self.addSubview(seperatorLine)
+        
     }
     
     func addLayout() {
@@ -87,6 +109,7 @@ class PriceView: UIView {
         offerContainer.translatesAutoresizingMaskIntoConstraints = false
         offerLabel.translatesAutoresizingMaskIntoConstraints = false
         offerValue.translatesAutoresizingMaskIntoConstraints = false
+        seperatorLine.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
         
@@ -97,31 +120,32 @@ class PriceView: UIView {
             
             approxLabel.topAnchor.constraint(equalTo: approxContainer.topAnchor, constant: 10),
             approxLabel.centerXAnchor.constraint(equalTo: approxContainer.centerXAnchor),
-         
-            
-            approxMonthLabel.bottomAnchor.constraint(equalTo: approxContainer.bottomAnchor, constant: -10),
-            approxMonthLabel.centerXAnchor.constraint(equalTo: approxContainer.centerXAnchor),
             
             approxPerMonth.topAnchor.constraint(equalTo: approxLabel.bottomAnchor, constant: 10),
-            approxPerMonth.bottomAnchor.constraint(equalTo: approxMonthLabel.topAnchor, constant: -10),
             approxPerMonth.centerXAnchor.constraint(equalTo: approxContainer.centerXAnchor),
+            
+            approxMonthLabel.topAnchor.constraint(equalTo: approxPerMonth.bottomAnchor, constant: 10),
+            approxMonthLabel.centerXAnchor.constraint(equalTo: approxContainer.centerXAnchor),
             
             offerContainer.topAnchor.constraint(equalTo: approxContainer.bottomAnchor),
             offerContainer.bottomAnchor.constraint(equalTo: self.bottomAnchor),
             offerContainer.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             offerContainer.widthAnchor.constraint(equalTo: self.widthAnchor),
             
-            offerLabel.topAnchor.constraint(equalTo: offerContainer.topAnchor,constant: 10),
+            offerLabel.topAnchor.constraint(equalTo: offerContainer.topAnchor),
             offerLabel.centerXAnchor.constraint(equalTo: offerContainer.centerXAnchor),
             
             offerValue.bottomAnchor.constraint(equalTo: offerContainer.bottomAnchor, constant: -10),
             offerValue.centerXAnchor.constraint(equalTo: offerContainer.centerXAnchor),
+            
+            seperatorLine.topAnchor.constraint(equalTo: approxContainer.bottomAnchor, constant: -10),
+            seperatorLine.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            seperatorLine.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            seperatorLine.heightAnchor.constraint(equalToConstant: 1),
         
         ])
         
-        approxContainer.layer.borderWidth = 1
-        offerContainer.layer.borderWidth = 1
-        
+       
         approxLabel.sizeToFit()
         approxPerMonth.sizeToFit()
         approxMonthLabel.sizeToFit()
@@ -134,6 +158,11 @@ class PriceView: UIView {
     override init(frame: CGRect) {
         
         super.init(frame: frame)
+        
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 7
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor.lightGray.cgColor
         
         addSubViews()
         addLayout()

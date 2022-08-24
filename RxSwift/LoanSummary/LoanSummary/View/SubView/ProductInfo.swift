@@ -14,6 +14,7 @@ class InfoView: UIView {
         
         let label = UILabel()
         label.font = label.font.withSize(18)
+        label.textColor = UIColor(red: 160/255, green: 160/255, blue: 160/255, alpha: 1)
         return label
         
     }()

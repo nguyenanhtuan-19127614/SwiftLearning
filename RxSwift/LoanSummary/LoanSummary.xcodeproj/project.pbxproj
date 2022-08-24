@@ -27,6 +27,7 @@
 		86C262BC28B625ED004E7A3C /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262BB28B625ED004E7A3C /* AgreementView.swift */; };
 		86C262C028B62B94004E7A3C /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262BF28B62B94004E7A3C /* ContractDetailView.swift */; };
 		86C262C528B62CD8004E7A3C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262C428B62CD8004E7A3C /* UIViewExtension.swift */; };
+		86C262C728B63A86004E7A3C /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262C628B63A86004E7A3C /* UILabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		86C262BB28B625ED004E7A3C /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		86C262BF28B62B94004E7A3C /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
 		86C262C428B62CD8004E7A3C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		86C262C628B63A86004E7A3C /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.debug.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.release.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,8 +137,8 @@
 		86C262A428B5E8F0004E7A3C /* SubView */ = {
 			isa = PBXGroup;
 			children = (
-				86C262AF28B60955004E7A3C /* PriceView.swift */,
 				86C262B128B60A0C004E7A3C /* LoanTopView.swift */,
+				86C262AF28B60955004E7A3C /* PriceView.swift */,
 				86C262B328B618FF004E7A3C /* ProductInfo.swift */,
 				86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */,
 				86C262B928B62176004E7A3C /* MoreDetailView.swift */,
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				86C262C428B62CD8004E7A3C /* UIViewExtension.swift */,
+				86C262C628B63A86004E7A3C /* UILabelExtension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				86C262BA28B62176004E7A3C /* MoreDetailView.swift in Sources */,
 				86C2628A28B5D497004E7A3C /* ViewController.swift in Sources */,
+				86C262C728B63A86004E7A3C /* UILabelExtension.swift in Sources */,
 				86C262A128B5E5C9004E7A3C /* LoanSummaryContentView.swift in Sources */,
 				86C2628628B5D497004E7A3C /* AppDelegate.swift in Sources */,
 				86C2628828B5D497004E7A3C /* SceneDelegate.swift in Sources */,

@@ -17,8 +17,10 @@ class AgreementView: UIView {
     let label: UILabel = {
         
         let label = UILabel()
-        label.font = label.font.withSize(15)
-        label.text = "I agree to the E-services term & conditions"
+       
+        let htmlString = "<span style=\"font-size: 15\"> I agree to the E-services <span style=\"color:#50A050\">term & conditions</span> </span>"
+        
+        label.renderHTMLAtribute(htmlString: htmlString)
         
         return label
         

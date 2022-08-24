@@ -51,7 +51,7 @@ class ContractDetailView: UIView {
             image.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
             image.widthAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
             image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            image.leadingAnchor.constraint(equalTo: label.trailingAnchor, constant: 20),
+            image.leadingAnchor.constraint(equalTo: label.trailingAnchor, constant: 5),
         
         ])
         

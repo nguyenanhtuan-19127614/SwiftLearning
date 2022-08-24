@@ -19,6 +19,7 @@ class LoanSummaryContentView: UIView {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "testImage")
         imageView.contentMode = .scaleToFill
+       
         return imageView
         
     }()
@@ -78,7 +79,7 @@ class LoanSummaryContentView: UIView {
         
         let label = UILabel()
         label.text = "Not now"
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.textColor = UIColor.gray.withAlphaComponent(0.8)
         label.sizeToFit()
         return label
@@ -125,7 +126,7 @@ class LoanSummaryContentView: UIView {
             
             productImage.topAnchor.constraint(equalTo: topView.bottomAnchor, constant: 10),
             productImage.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            productImage.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 2/3),
+            productImage.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 3/4),
             productImage.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/4),
             
             priceView.topAnchor.constraint(equalTo: productImage.bottomAnchor, constant: 10),

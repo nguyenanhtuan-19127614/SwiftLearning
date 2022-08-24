@@ -39,6 +39,11 @@ class ViewController: UIViewController {
         addLayout()
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = "Loan Summary"
+    }
   
    
 }

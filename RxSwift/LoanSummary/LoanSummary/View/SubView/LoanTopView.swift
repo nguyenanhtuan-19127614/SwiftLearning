@@ -23,9 +23,10 @@ class LoanTopView: UIView {
     //label
     let expiredLabel: UILabel = {
         let label = UILabel()
-        label.text = "Offer expires in: {n} days"
-        label.font = label.font.withSize(25)
-
+        
+        let htmlString = "<span style=\"font-size: 25\"> Offer expires in <span style=\"color:#50A050\"><b>{n} days</b></span> </span>"
+        
+        label.renderHTMLAtribute(htmlString: htmlString)
         return label
     }()
     
@@ -49,7 +50,7 @@ class LoanTopView: UIView {
     let appIDContainer: UIView = {
         
         let view = UIView()
-        view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 1)
+        view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 0.5)
         view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
         return view
