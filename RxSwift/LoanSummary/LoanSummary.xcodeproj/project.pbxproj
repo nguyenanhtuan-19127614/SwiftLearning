@@ -7,136 +7,173 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86A6FF0D28B5C83F004D3755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF0C28B5C83F004D3755 /* AppDelegate.swift */; };
-		86A6FF0F28B5C83F004D3755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF0E28B5C83F004D3755 /* SceneDelegate.swift */; };
-		86A6FF1128B5C83F004D3755 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF1028B5C83F004D3755 /* ViewController.swift */; };
-		86A6FF1428B5C83F004D3755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A6FF1228B5C83F004D3755 /* Main.storyboard */; };
-		86A6FF1628B5C840004D3755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86A6FF1528B5C840004D3755 /* Assets.xcassets */; };
-		86A6FF1928B5C840004D3755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A6FF1728B5C840004D3755 /* LaunchScreen.storyboard */; };
-		86A6FF2428B5C840004D3755 /* LoanSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF2328B5C840004D3755 /* LoanSummaryTests.swift */; };
-		86A6FF2E28B5C841004D3755 /* LoanSummaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF2D28B5C841004D3755 /* LoanSummaryUITests.swift */; };
-		86A6FF3028B5C841004D3755 /* LoanSummaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A6FF2F28B5C841004D3755 /* LoanSummaryUITestsLaunchTests.swift */; };
+		7C7CBEC26395DAE323EA6E64 /* Pods_LoanSummary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */; };
+		86C2628628B5D497004E7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2628528B5D497004E7A3C /* AppDelegate.swift */; };
+		86C2628828B5D497004E7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2628728B5D497004E7A3C /* SceneDelegate.swift */; };
+		86C2628A28B5D497004E7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2628928B5D497004E7A3C /* ViewController.swift */; };
+		86C2628D28B5D497004E7A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C2628B28B5D497004E7A3C /* Main.storyboard */; };
+		86C2628F28B5D499004E7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C2628E28B5D499004E7A3C /* Assets.xcassets */; };
+		86C2629228B5D499004E7A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */; };
+		86C2629C28B5D8DF004E7A3C /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2629B28B5D8DF004E7A3C /* APIHandler.swift */; };
+		86C2629E28B5D99F004E7A3C /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2629D28B5D99F004E7A3C /* APITarget.swift */; };
+		86C262A128B5E5C9004E7A3C /* LoanSummaryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */; };
+		86C262A928B5EBE1004E7A3C /* LoanSummaryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */; };
+		86C262AB28B60056004E7A3C /* LoanSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */; };
+		86C262B028B60955004E7A3C /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262AF28B60955004E7A3C /* PriceView.swift */; };
+		86C262B228B60A0C004E7A3C /* LoanTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B128B60A0C004E7A3C /* LoanTopView.swift */; };
+		86C262B428B618FF004E7A3C /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B328B618FF004E7A3C /* ProductInfo.swift */; };
+		86C262B828B61EB3004E7A3C /* TerminationFeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */; };
+		86C262BA28B62176004E7A3C /* MoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B928B62176004E7A3C /* MoreDetailView.swift */; };
+		86C262BC28B625ED004E7A3C /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262BB28B625ED004E7A3C /* AgreementView.swift */; };
+		86C262C028B62B94004E7A3C /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262BF28B62B94004E7A3C /* ContractDetailView.swift */; };
+		86C262C528B62CD8004E7A3C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262C428B62CD8004E7A3C /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		86A6FF2028B5C840004D3755 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86A6FF0128B5C83F004D3755 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 86A6FF0828B5C83F004D3755;
-			remoteInfo = LoanSummary;
-		};
-		86A6FF2A28B5C841004D3755 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 86A6FF0128B5C83F004D3755 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 86A6FF0828B5C83F004D3755;
-			remoteInfo = LoanSummary;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		86A6FF0928B5C83F004D3755 /* LoanSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		86A6FF0C28B5C83F004D3755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86A6FF0E28B5C83F004D3755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86A6FF1028B5C83F004D3755 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		86A6FF1328B5C83F004D3755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86A6FF1528B5C840004D3755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		86A6FF1828B5C840004D3755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		86A6FF1A28B5C840004D3755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86A6FF1F28B5C840004D3755 /* LoanSummaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanSummaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86A6FF2328B5C840004D3755 /* LoanSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryTests.swift; sourceTree = "<group>"; };
-		86A6FF2928B5C841004D3755 /* LoanSummaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoanSummaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86A6FF2D28B5C841004D3755 /* LoanSummaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryUITests.swift; sourceTree = "<group>"; };
-		86A6FF2F28B5C841004D3755 /* LoanSummaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86C2628228B5D497004E7A3C /* LoanSummary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanSummary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86C2628528B5D497004E7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86C2628728B5D497004E7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86C2628928B5D497004E7A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86C2628C28B5D497004E7A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86C2628E28B5D499004E7A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86C2629128B5D499004E7A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86C2629328B5D499004E7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C2629B28B5D8DF004E7A3C /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		86C2629D28B5D99F004E7A3C /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryContentView.swift; sourceTree = "<group>"; };
+		86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryDataSource.swift; sourceTree = "<group>"; };
+		86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryDataModel.swift; sourceTree = "<group>"; };
+		86C262AF28B60955004E7A3C /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		86C262B128B60A0C004E7A3C /* LoanTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTopView.swift; sourceTree = "<group>"; };
+		86C262B328B618FF004E7A3C /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminationFeeView.swift; sourceTree = "<group>"; };
+		86C262B928B62176004E7A3C /* MoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailView.swift; sourceTree = "<group>"; };
+		86C262BB28B625ED004E7A3C /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
+		86C262BF28B62B94004E7A3C /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
+		86C262C428B62CD8004E7A3C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.debug.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.release.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86A6FF0628B5C83F004D3755 /* Frameworks */ = {
+		86C2627F28B5D497004E7A3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF1C28B5C840004D3755 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF2628B5C841004D3755 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7C7CBEC26395DAE323EA6E64 /* Pods_LoanSummary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86A6FF0028B5C83F004D3755 = {
+		25BA8AA584C9E8C1CF58C720 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				86A6FF0B28B5C83F004D3755 /* LoanSummary */,
-				86A6FF2228B5C840004D3755 /* LoanSummaryTests */,
-				86A6FF2C28B5C841004D3755 /* LoanSummaryUITests */,
-				86A6FF0A28B5C83F004D3755 /* Products */,
+				98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */,
+				D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		86C2627928B5D497004E7A3C = {
+			isa = PBXGroup;
+			children = (
+				86C2628428B5D497004E7A3C /* LoanSummary */,
+				86C2628328B5D497004E7A3C /* Products */,
+				25BA8AA584C9E8C1CF58C720 /* Pods */,
+				A9BCF3D41147D1E50C75F937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		86A6FF0A28B5C83F004D3755 /* Products */ = {
+		86C2628328B5D497004E7A3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				86A6FF0928B5C83F004D3755 /* LoanSummary.app */,
-				86A6FF1F28B5C840004D3755 /* LoanSummaryTests.xctest */,
-				86A6FF2928B5C841004D3755 /* LoanSummaryUITests.xctest */,
+				86C2628228B5D497004E7A3C /* LoanSummary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		86A6FF0B28B5C83F004D3755 /* LoanSummary */ = {
+		86C2628428B5D497004E7A3C /* LoanSummary */ = {
 			isa = PBXGroup;
 			children = (
-				86A6FF0C28B5C83F004D3755 /* AppDelegate.swift */,
-				86A6FF0E28B5C83F004D3755 /* SceneDelegate.swift */,
-				86A6FF1028B5C83F004D3755 /* ViewController.swift */,
-				86A6FF1228B5C83F004D3755 /* Main.storyboard */,
-				86A6FF1528B5C840004D3755 /* Assets.xcassets */,
-				86A6FF1728B5C840004D3755 /* LaunchScreen.storyboard */,
-				86A6FF1A28B5C840004D3755 /* Info.plist */,
+				86C262C328B62CC7004E7A3C /* Extention */,
+				86C2629F28B5E5BC004E7A3C /* View */,
+				86C2629A28B5D8C0004E7A3C /* APIHandler */,
+				86C2628528B5D497004E7A3C /* AppDelegate.swift */,
+				86C2628728B5D497004E7A3C /* SceneDelegate.swift */,
+				86C2628928B5D497004E7A3C /* ViewController.swift */,
+				86C2628B28B5D497004E7A3C /* Main.storyboard */,
+				86C2628E28B5D499004E7A3C /* Assets.xcassets */,
+				86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */,
+				86C2629328B5D499004E7A3C /* Info.plist */,
 			);
 			path = LoanSummary;
 			sourceTree = "<group>";
 		};
-		86A6FF2228B5C840004D3755 /* LoanSummaryTests */ = {
+		86C2629A28B5D8C0004E7A3C /* APIHandler */ = {
 			isa = PBXGroup;
 			children = (
-				86A6FF2328B5C840004D3755 /* LoanSummaryTests.swift */,
+				86C2629B28B5D8DF004E7A3C /* APIHandler.swift */,
+				86C2629D28B5D99F004E7A3C /* APITarget.swift */,
 			);
-			path = LoanSummaryTests;
+			path = APIHandler;
 			sourceTree = "<group>";
 		};
-		86A6FF2C28B5C841004D3755 /* LoanSummaryUITests */ = {
+		86C2629F28B5E5BC004E7A3C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				86A6FF2D28B5C841004D3755 /* LoanSummaryUITests.swift */,
-				86A6FF2F28B5C841004D3755 /* LoanSummaryUITestsLaunchTests.swift */,
+				86C262A428B5E8F0004E7A3C /* SubView */,
+				86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */,
+				86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */,
+				86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */,
 			);
-			path = LoanSummaryUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		86C262A428B5E8F0004E7A3C /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				86C262AF28B60955004E7A3C /* PriceView.swift */,
+				86C262B128B60A0C004E7A3C /* LoanTopView.swift */,
+				86C262B328B618FF004E7A3C /* ProductInfo.swift */,
+				86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */,
+				86C262B928B62176004E7A3C /* MoreDetailView.swift */,
+				86C262BB28B625ED004E7A3C /* AgreementView.swift */,
+				86C262BF28B62B94004E7A3C /* ContractDetailView.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		86C262C328B62CC7004E7A3C /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				86C262C428B62CD8004E7A3C /* UIViewExtension.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		A9BCF3D41147D1E50C75F937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86A6FF0828B5C83F004D3755 /* LoanSummary */ = {
+		86C2628128B5D497004E7A3C /* LoanSummary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86A6FF3328B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummary" */;
+			buildConfigurationList = 86C2629628B5D499004E7A3C /* Build configuration list for PBXNativeTarget "LoanSummary" */;
 			buildPhases = (
-				86A6FF0528B5C83F004D3755 /* Sources */,
-				86A6FF0628B5C83F004D3755 /* Frameworks */,
-				86A6FF0728B5C83F004D3755 /* Resources */,
+				F667DA4E78A1E01913176A8B /* [CP] Check Pods Manifest.lock */,
+				86C2627E28B5D497004E7A3C /* Sources */,
+				86C2627F28B5D497004E7A3C /* Frameworks */,
+				86C2628028B5D497004E7A3C /* Resources */,
+				8AC8AF13E43EC610D84CCD36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,69 +181,25 @@
 			);
 			name = LoanSummary;
 			productName = LoanSummary;
-			productReference = 86A6FF0928B5C83F004D3755 /* LoanSummary.app */;
+			productReference = 86C2628228B5D497004E7A3C /* LoanSummary.app */;
 			productType = "com.apple.product-type.application";
-		};
-		86A6FF1E28B5C840004D3755 /* LoanSummaryTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 86A6FF3628B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummaryTests" */;
-			buildPhases = (
-				86A6FF1B28B5C840004D3755 /* Sources */,
-				86A6FF1C28B5C840004D3755 /* Frameworks */,
-				86A6FF1D28B5C840004D3755 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				86A6FF2128B5C840004D3755 /* PBXTargetDependency */,
-			);
-			name = LoanSummaryTests;
-			productName = LoanSummaryTests;
-			productReference = 86A6FF1F28B5C840004D3755 /* LoanSummaryTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		86A6FF2828B5C841004D3755 /* LoanSummaryUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 86A6FF3928B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummaryUITests" */;
-			buildPhases = (
-				86A6FF2528B5C841004D3755 /* Sources */,
-				86A6FF2628B5C841004D3755 /* Frameworks */,
-				86A6FF2728B5C841004D3755 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				86A6FF2B28B5C841004D3755 /* PBXTargetDependency */,
-			);
-			name = LoanSummaryUITests;
-			productName = LoanSummaryUITests;
-			productReference = 86A6FF2928B5C841004D3755 /* LoanSummaryUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86A6FF0128B5C83F004D3755 /* Project object */ = {
+		86C2627A28B5D497004E7A3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					86A6FF0828B5C83F004D3755 = {
+					86C2628128B5D497004E7A3C = {
 						CreatedOnToolsVersion = 13.4.1;
-					};
-					86A6FF1E28B5C840004D3755 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 86A6FF0828B5C83F004D3755;
-					};
-					86A6FF2828B5C841004D3755 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 86A6FF0828B5C83F004D3755;
 					};
 				};
 			};
-			buildConfigurationList = 86A6FF0428B5C83F004D3755 /* Build configuration list for PBXProject "LoanSummary" */;
+			buildConfigurationList = 86C2627D28B5D497004E7A3C /* Build configuration list for PBXProject "LoanSummary" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,101 +207,110 @@
 				en,
 				Base,
 			);
-			mainGroup = 86A6FF0028B5C83F004D3755;
-			productRefGroup = 86A6FF0A28B5C83F004D3755 /* Products */;
+			mainGroup = 86C2627928B5D497004E7A3C;
+			productRefGroup = 86C2628328B5D497004E7A3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86A6FF0828B5C83F004D3755 /* LoanSummary */,
-				86A6FF1E28B5C840004D3755 /* LoanSummaryTests */,
-				86A6FF2828B5C841004D3755 /* LoanSummaryUITests */,
+				86C2628128B5D497004E7A3C /* LoanSummary */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86A6FF0728B5C83F004D3755 /* Resources */ = {
+		86C2628028B5D497004E7A3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A6FF1928B5C840004D3755 /* LaunchScreen.storyboard in Resources */,
-				86A6FF1628B5C840004D3755 /* Assets.xcassets in Resources */,
-				86A6FF1428B5C83F004D3755 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF1D28B5C840004D3755 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF2728B5C841004D3755 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				86C2629228B5D499004E7A3C /* LaunchScreen.storyboard in Resources */,
+				86C2628F28B5D499004E7A3C /* Assets.xcassets in Resources */,
+				86C2628D28B5D497004E7A3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8AC8AF13E43EC610D84CCD36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoanSummary/Pods-LoanSummary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoanSummary/Pods-LoanSummary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoanSummary/Pods-LoanSummary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F667DA4E78A1E01913176A8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoanSummary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		86A6FF0528B5C83F004D3755 /* Sources */ = {
+		86C2627E28B5D497004E7A3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86A6FF1128B5C83F004D3755 /* ViewController.swift in Sources */,
-				86A6FF0D28B5C83F004D3755 /* AppDelegate.swift in Sources */,
-				86A6FF0F28B5C83F004D3755 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF1B28B5C840004D3755 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				86A6FF2428B5C840004D3755 /* LoanSummaryTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86A6FF2528B5C841004D3755 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				86A6FF2E28B5C841004D3755 /* LoanSummaryUITests.swift in Sources */,
-				86A6FF3028B5C841004D3755 /* LoanSummaryUITestsLaunchTests.swift in Sources */,
+				86C262BA28B62176004E7A3C /* MoreDetailView.swift in Sources */,
+				86C2628A28B5D497004E7A3C /* ViewController.swift in Sources */,
+				86C262A128B5E5C9004E7A3C /* LoanSummaryContentView.swift in Sources */,
+				86C2628628B5D497004E7A3C /* AppDelegate.swift in Sources */,
+				86C2628828B5D497004E7A3C /* SceneDelegate.swift in Sources */,
+				86C2629E28B5D99F004E7A3C /* APITarget.swift in Sources */,
+				86C262C528B62CD8004E7A3C /* UIViewExtension.swift in Sources */,
+				86C262B028B60955004E7A3C /* PriceView.swift in Sources */,
+				86C262BC28B625ED004E7A3C /* AgreementView.swift in Sources */,
+				86C262B228B60A0C004E7A3C /* LoanTopView.swift in Sources */,
+				86C262A928B5EBE1004E7A3C /* LoanSummaryDataSource.swift in Sources */,
+				86C262AB28B60056004E7A3C /* LoanSummaryDataModel.swift in Sources */,
+				86C2629C28B5D8DF004E7A3C /* APIHandler.swift in Sources */,
+				86C262B428B618FF004E7A3C /* ProductInfo.swift in Sources */,
+				86C262B828B61EB3004E7A3C /* TerminationFeeView.swift in Sources */,
+				86C262C028B62B94004E7A3C /* ContractDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		86A6FF2128B5C840004D3755 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 86A6FF0828B5C83F004D3755 /* LoanSummary */;
-			targetProxy = 86A6FF2028B5C840004D3755 /* PBXContainerItemProxy */;
-		};
-		86A6FF2B28B5C841004D3755 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 86A6FF0828B5C83F004D3755 /* LoanSummary */;
-			targetProxy = 86A6FF2A28B5C841004D3755 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		86A6FF1228B5C83F004D3755 /* Main.storyboard */ = {
+		86C2628B28B5D497004E7A3C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86A6FF1328B5C83F004D3755 /* Base */,
+				86C2628C28B5D497004E7A3C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		86A6FF1728B5C840004D3755 /* LaunchScreen.storyboard */ = {
+		86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				86A6FF1828B5C840004D3755 /* Base */,
+				86C2629128B5D499004E7A3C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +318,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		86A6FF3128B5C841004D3755 /* Debug */ = {
+		86C2629428B5D499004E7A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +378,7 @@
 			};
 			name = Debug;
 		};
-		86A6FF3228B5C841004D3755 /* Release */ = {
+		86C2629528B5D499004E7A3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,8 +432,9 @@
 			};
 			name = Release;
 		};
-		86A6FF3428B5C841004D3755 /* Debug */ = {
+		86C2629728B5D499004E7A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -458,8 +461,9 @@
 			};
 			name = Debug;
 		};
-		86A6FF3528B5C841004D3755 /* Release */ = {
+		86C2629828B5D499004E7A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,125 +487,31 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		86A6FF3728B5C841004D3755 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JKVZH68BTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.LoanSummaryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanSummary.app/LoanSummary";
-			};
-			name = Debug;
-		};
-		86A6FF3828B5C841004D3755 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JKVZH68BTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.LoanSummaryTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoanSummary.app/LoanSummary";
-			};
-			name = Release;
-		};
-		86A6FF3A28B5C841004D3755 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JKVZH68BTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.LoanSummaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoanSummary;
-			};
-			name = Debug;
-		};
-		86A6FF3B28B5C841004D3755 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JKVZH68BTJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Test.LoanSummaryUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LoanSummary;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86A6FF0428B5C83F004D3755 /* Build configuration list for PBXProject "LoanSummary" */ = {
+		86C2627D28B5D497004E7A3C /* Build configuration list for PBXProject "LoanSummary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86A6FF3128B5C841004D3755 /* Debug */,
-				86A6FF3228B5C841004D3755 /* Release */,
+				86C2629428B5D499004E7A3C /* Debug */,
+				86C2629528B5D499004E7A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86A6FF3328B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummary" */ = {
+		86C2629628B5D499004E7A3C /* Build configuration list for PBXNativeTarget "LoanSummary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86A6FF3428B5C841004D3755 /* Debug */,
-				86A6FF3528B5C841004D3755 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		86A6FF3628B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummaryTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				86A6FF3728B5C841004D3755 /* Debug */,
-				86A6FF3828B5C841004D3755 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		86A6FF3928B5C841004D3755 /* Build configuration list for PBXNativeTarget "LoanSummaryUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				86A6FF3A28B5C841004D3755 /* Debug */,
-				86A6FF3B28B5C841004D3755 /* Release */,
+				86C2629728B5D499004E7A3C /* Debug */,
+				86C2629828B5D499004E7A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 86A6FF0128B5C83F004D3755 /* Project object */;
+	rootObject = 86C2627A28B5D497004E7A3C /* Project object */;
 }
