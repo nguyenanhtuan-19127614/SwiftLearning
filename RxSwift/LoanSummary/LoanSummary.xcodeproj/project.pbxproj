@@ -32,6 +32,8 @@
 		86CC951728B73142008D71A4 /* PersonalLoanContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951628B73142008D71A4 /* PersonalLoanContentView.swift */; };
 		86CC951928B7317C008D71A4 /* ContentViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951828B7317C008D71A4 /* ContentViewType.swift */; };
 		86CC951D28B756BF008D71A4 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951C28B756BF008D71A4 /* OfferView.swift */; };
+		86CC951F28B76AC7008D71A4 /* InterestRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951E28B76AC7008D71A4 /* InterestRateView.swift */; };
+		86CC952328B76F4F008D71A4 /* LoanInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC952228B76F4F008D71A4 /* LoanInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		86CC951628B73142008D71A4 /* PersonalLoanContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalLoanContentView.swift; sourceTree = "<group>"; };
 		86CC951828B7317C008D71A4 /* ContentViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewType.swift; sourceTree = "<group>"; };
 		86CC951C28B756BF008D71A4 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		86CC951E28B76AC7008D71A4 /* InterestRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestRateView.swift; sourceTree = "<group>"; };
+		86CC952228B76F4F008D71A4 /* LoanInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanInfoView.swift; sourceTree = "<group>"; };
 		87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.debug.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.release.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.release.xcconfig"; sourceTree = "<group>"; };
@@ -197,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				86CC951C28B756BF008D71A4 /* OfferView.swift */,
+				86CC951E28B76AC7008D71A4 /* InterestRateView.swift */,
+				86CC952228B76F4F008D71A4 /* LoanInfoView.swift */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -338,8 +344,10 @@
 				86C262BC28B625ED004E7A3C /* AgreementView.swift in Sources */,
 				86C262B228B60A0C004E7A3C /* LoanTopView.swift in Sources */,
 				86CC951928B7317C008D71A4 /* ContentViewType.swift in Sources */,
+				86CC952328B76F4F008D71A4 /* LoanInfoView.swift in Sources */,
 				86C2629C28B5D8DF004E7A3C /* APIHandler.swift in Sources */,
 				86C262B428B618FF004E7A3C /* ProductInfo.swift in Sources */,
+				86CC951F28B76AC7008D71A4 /* InterestRateView.swift in Sources */,
 				86CC950928B71000008D71A4 /* DataModel.swift in Sources */,
 				86C262B828B61EB3004E7A3C /* TerminationFeeView.swift in Sources */,
 				86CC951428B72F3F008D71A4 /* InfoView.swift in Sources */,

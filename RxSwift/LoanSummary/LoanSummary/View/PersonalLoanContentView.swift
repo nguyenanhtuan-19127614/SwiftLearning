@@ -42,6 +42,14 @@ class PersonalLoanContentView: UIView {
     
     private let offerView3 = OfferView()
     
+    //Offer View
+    private let interestView1 = InterestRateView()
+    
+    private let interestView2 = InterestRateView()
+    
+    //Loan Info View
+    private let loanInfoView = LoanInfoView()
+    
     //Confirm Button
     private let confirmButton: UIButton = {
         
@@ -93,6 +101,9 @@ class PersonalLoanContentView: UIView {
         self.addSubview(offerView1)
         self.addSubview(offerView2)
         self.addSubview(offerView3)
+        self.addSubview(interestView1)
+        self.addSubview(interestView2)
+        self.addSubview(loanInfoView)
         self.addSubview(confirmButton)
         self.addSubview(rejectButton)
         self.addSubview(closeLabel)
@@ -107,9 +118,12 @@ class PersonalLoanContentView: UIView {
         offerView1.translatesAutoresizingMaskIntoConstraints = false
         offerView2.translatesAutoresizingMaskIntoConstraints = false
         offerView3.translatesAutoresizingMaskIntoConstraints = false
+        interestView1.translatesAutoresizingMaskIntoConstraints = false
+        interestView2.translatesAutoresizingMaskIntoConstraints = false
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
         rejectButton.translatesAutoresizingMaskIntoConstraints = false
         closeLabel.translatesAutoresizingMaskIntoConstraints = false
+        loanInfoView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
         
@@ -142,7 +156,22 @@ class PersonalLoanContentView: UIView {
             offerView3.widthAnchor.constraint(equalTo: offerView1.widthAnchor),
             offerView3.heightAnchor.constraint(equalTo: offerView1.heightAnchor),
             
-            confirmButton.topAnchor.constraint(equalTo: offerView3.bottomAnchor, constant: 30),
+            interestView1.topAnchor.constraint(equalTo: offerView3.bottomAnchor, constant: 20),
+            interestView1.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+            interestView1.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
+            interestView1.heightAnchor.constraint(equalTo: offerView1.heightAnchor, multiplier: 0.3),
+            
+            interestView2.topAnchor.constraint(equalTo: offerView3.bottomAnchor, constant: 20),
+            interestView2.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+            interestView2.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -30),
+            interestView2.heightAnchor.constraint(equalTo: interestView1.heightAnchor),
+            
+            loanInfoView.topAnchor.constraint(equalTo: interestView2.bottomAnchor, constant: 10),
+            loanInfoView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            loanInfoView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
+            loanInfoView.heightAnchor.constraint(equalTo: topView.heightAnchor),
+            
+            confirmButton.topAnchor.constraint(equalTo: loanInfoView.bottomAnchor, constant: 30),
             confirmButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             confirmButton.widthAnchor.constraint(equalTo: offerView1.widthAnchor),
             confirmButton.heightAnchor.constraint(equalToConstant: 50),
@@ -156,7 +185,7 @@ class PersonalLoanContentView: UIView {
             closeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             closeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
-       
+        
     }
     
     //MARK: Overide Init
