@@ -15,10 +15,7 @@
 		86C2628F28B5D499004E7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C2628E28B5D499004E7A3C /* Assets.xcassets */; };
 		86C2629228B5D499004E7A3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */; };
 		86C2629C28B5D8DF004E7A3C /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2629B28B5D8DF004E7A3C /* APIHandler.swift */; };
-		86C2629E28B5D99F004E7A3C /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2629D28B5D99F004E7A3C /* APITarget.swift */; };
 		86C262A128B5E5C9004E7A3C /* LoanSummaryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */; };
-		86C262A928B5EBE1004E7A3C /* LoanSummaryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */; };
-		86C262AB28B60056004E7A3C /* LoanSummaryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */; };
 		86C262B028B60955004E7A3C /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262AF28B60955004E7A3C /* PriceView.swift */; };
 		86C262B228B60A0C004E7A3C /* LoanTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B128B60A0C004E7A3C /* LoanTopView.swift */; };
 		86C262B428B618FF004E7A3C /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262B328B618FF004E7A3C /* ProductInfo.swift */; };
@@ -28,6 +25,10 @@
 		86C262C028B62B94004E7A3C /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262BF28B62B94004E7A3C /* ContractDetailView.swift */; };
 		86C262C528B62CD8004E7A3C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262C428B62CD8004E7A3C /* UIViewExtension.swift */; };
 		86C262C728B63A86004E7A3C /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C262C628B63A86004E7A3C /* UILabelExtension.swift */; };
+		86CC950928B71000008D71A4 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC950828B71000008D71A4 /* DataModel.swift */; };
+		86CC950B28B7159A008D71A4 /* LoanSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC950A28B7159A008D71A4 /* LoanSummaryModel.swift */; };
+		86CC951128B71861008D71A4 /* LoanSummaryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951028B71861008D71A4 /* LoanSummaryDataSource.swift */; };
+		86CC951428B72F3F008D71A4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951328B72F3F008D71A4 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +41,7 @@
 		86C2629128B5D499004E7A3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C2629328B5D499004E7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C2629B28B5D8DF004E7A3C /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
-		86C2629D28B5D99F004E7A3C /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
 		86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryContentView.swift; sourceTree = "<group>"; };
-		86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryDataSource.swift; sourceTree = "<group>"; };
-		86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryDataModel.swift; sourceTree = "<group>"; };
 		86C262AF28B60955004E7A3C /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
 		86C262B128B60A0C004E7A3C /* LoanTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanTopView.swift; sourceTree = "<group>"; };
 		86C262B328B618FF004E7A3C /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
@@ -53,6 +51,10 @@
 		86C262BF28B62B94004E7A3C /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
 		86C262C428B62CD8004E7A3C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		86C262C628B63A86004E7A3C /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		86CC950828B71000008D71A4 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		86CC950A28B7159A008D71A4 /* LoanSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryModel.swift; sourceTree = "<group>"; };
+		86CC951028B71861008D71A4 /* LoanSummaryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSummaryDataSource.swift; sourceTree = "<group>"; };
+		86CC951328B72F3F008D71A4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.debug.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.release.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,8 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				86C2628428B5D497004E7A3C /* LoanSummary */,
-				86C2628328B5D497004E7A3C /* Products */,
 				25BA8AA584C9E8C1CF58C720 /* Pods */,
+				86C2628328B5D497004E7A3C /* Products */,
 				A9BCF3D41147D1E50C75F937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -100,15 +102,15 @@
 		86C2628428B5D497004E7A3C /* LoanSummary */ = {
 			isa = PBXGroup;
 			children = (
-				86C262C328B62CC7004E7A3C /* Extention */,
-				86C2629F28B5E5BC004E7A3C /* View */,
-				86C2629A28B5D8C0004E7A3C /* APIHandler */,
 				86C2628528B5D497004E7A3C /* AppDelegate.swift */,
 				86C2628728B5D497004E7A3C /* SceneDelegate.swift */,
 				86C2628928B5D497004E7A3C /* ViewController.swift */,
-				86C2628B28B5D497004E7A3C /* Main.storyboard */,
-				86C2628E28B5D499004E7A3C /* Assets.xcassets */,
-				86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */,
+				86CC951028B71861008D71A4 /* LoanSummaryDataSource.swift */,
+				86CC950A28B7159A008D71A4 /* LoanSummaryModel.swift */,
+				86C2629F28B5E5BC004E7A3C /* View */,
+				86CC950C28B715BF008D71A4 /* Module */,
+				86C262C328B62CC7004E7A3C /* Extention */,
+				86CC950F28B7181A008D71A4 /* Resource */,
 				86C2629328B5D499004E7A3C /* Info.plist */,
 			);
 			path = LoanSummary;
@@ -118,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				86C2629B28B5D8DF004E7A3C /* APIHandler.swift */,
-				86C2629D28B5D99F004E7A3C /* APITarget.swift */,
+				86CC950828B71000008D71A4 /* DataModel.swift */,
 			);
 			path = APIHandler;
 			sourceTree = "<group>";
@@ -128,8 +130,6 @@
 			children = (
 				86C262A428B5E8F0004E7A3C /* SubView */,
 				86C262A028B5E5C9004E7A3C /* LoanSummaryContentView.swift */,
-				86C262A828B5EBE1004E7A3C /* LoanSummaryDataSource.swift */,
-				86C262AA28B60056004E7A3C /* LoanSummaryDataModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,13 +137,10 @@
 		86C262A428B5E8F0004E7A3C /* SubView */ = {
 			isa = PBXGroup;
 			children = (
+				86CC951328B72F3F008D71A4 /* InfoView.swift */,
 				86C262B128B60A0C004E7A3C /* LoanTopView.swift */,
-				86C262AF28B60955004E7A3C /* PriceView.swift */,
-				86C262B328B618FF004E7A3C /* ProductInfo.swift */,
-				86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */,
-				86C262B928B62176004E7A3C /* MoreDetailView.swift */,
-				86C262BB28B625ED004E7A3C /* AgreementView.swift */,
-				86C262BF28B62B94004E7A3C /* ContractDetailView.swift */,
+				86CC951228B72F0D008D71A4 /* ConsumerDurable */,
+				86CC951528B72F86008D71A4 /* Personal */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -155,6 +152,44 @@
 				86C262C628B63A86004E7A3C /* UILabelExtension.swift */,
 			);
 			path = Extention;
+			sourceTree = "<group>";
+		};
+		86CC950C28B715BF008D71A4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				86C2629A28B5D8C0004E7A3C /* APIHandler */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		86CC950F28B7181A008D71A4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				86C2628B28B5D497004E7A3C /* Main.storyboard */,
+				86C2628E28B5D499004E7A3C /* Assets.xcassets */,
+				86C2629028B5D499004E7A3C /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86CC951228B72F0D008D71A4 /* ConsumerDurable */ = {
+			isa = PBXGroup;
+			children = (
+				86C262AF28B60955004E7A3C /* PriceView.swift */,
+				86C262B328B618FF004E7A3C /* ProductInfo.swift */,
+				86C262B928B62176004E7A3C /* MoreDetailView.swift */,
+				86C262B728B61EB3004E7A3C /* TerminationFeeView.swift */,
+				86C262BB28B625ED004E7A3C /* AgreementView.swift */,
+				86C262BF28B62B94004E7A3C /* ContractDetailView.swift */,
+			);
+			path = ConsumerDurable;
+			sourceTree = "<group>";
+		};
+		86CC951528B72F86008D71A4 /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
 			sourceTree = "<group>";
 		};
 		A9BCF3D41147D1E50C75F937 /* Frameworks */ = {
@@ -284,18 +319,19 @@
 				86C2628A28B5D497004E7A3C /* ViewController.swift in Sources */,
 				86C262C728B63A86004E7A3C /* UILabelExtension.swift in Sources */,
 				86C262A128B5E5C9004E7A3C /* LoanSummaryContentView.swift in Sources */,
+				86CC950B28B7159A008D71A4 /* LoanSummaryModel.swift in Sources */,
 				86C2628628B5D497004E7A3C /* AppDelegate.swift in Sources */,
+				86CC951128B71861008D71A4 /* LoanSummaryDataSource.swift in Sources */,
 				86C2628828B5D497004E7A3C /* SceneDelegate.swift in Sources */,
-				86C2629E28B5D99F004E7A3C /* APITarget.swift in Sources */,
 				86C262C528B62CD8004E7A3C /* UIViewExtension.swift in Sources */,
 				86C262B028B60955004E7A3C /* PriceView.swift in Sources */,
 				86C262BC28B625ED004E7A3C /* AgreementView.swift in Sources */,
 				86C262B228B60A0C004E7A3C /* LoanTopView.swift in Sources */,
-				86C262A928B5EBE1004E7A3C /* LoanSummaryDataSource.swift in Sources */,
-				86C262AB28B60056004E7A3C /* LoanSummaryDataModel.swift in Sources */,
 				86C2629C28B5D8DF004E7A3C /* APIHandler.swift in Sources */,
 				86C262B428B618FF004E7A3C /* ProductInfo.swift in Sources */,
+				86CC950928B71000008D71A4 /* DataModel.swift in Sources */,
 				86C262B828B61EB3004E7A3C /* TerminationFeeView.swift in Sources */,
+				86CC951428B72F3F008D71A4 /* InfoView.swift in Sources */,
 				86C262C028B62B94004E7A3C /* ContractDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

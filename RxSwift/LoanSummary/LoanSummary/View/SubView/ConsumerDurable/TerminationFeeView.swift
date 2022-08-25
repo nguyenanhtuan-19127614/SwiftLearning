@@ -10,7 +10,7 @@ import UIKit
 
 class TerminationFeeView: UIView {
     
-    let feeLabel: UILabel = {
+    private let feeLabel: UILabel = {
         
         let label = UILabel()
         label.text = "EARLY TERMINATION FEE: 5% OF REMAINING PRINCIPAL"
@@ -21,13 +21,13 @@ class TerminationFeeView: UIView {
         
     }()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(feeLabel)
         
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         feeLabel.translatesAutoresizingMaskIntoConstraints = false
         

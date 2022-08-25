@@ -10,11 +10,11 @@ import UIKit
 
 class AgreementView: UIView {
     
-    let defaultColor: UIColor = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
-    let checkedColor: UIColor = UIColor(red: 60/255, green: 160/255, blue: 80/255, alpha: 1)
+    private let defaultColor: UIColor = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
+    private let checkedColor: UIColor = UIColor(red: 60/255, green: 160/255, blue: 80/255, alpha: 1)
     var isChecked: Bool = false
     
-    let label: UILabel = {
+    private let label: UILabel = {
         
         let label = UILabel()
        
@@ -26,7 +26,7 @@ class AgreementView: UIView {
         
     }()
     
-    let checkbox: UIButton = {
+    private let checkbox: UIButton = {
         
         let btn = UIButton()
         btn.layer.masksToBounds = true
@@ -36,14 +36,14 @@ class AgreementView: UIView {
         
     }()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(label)
         self.addSubview(checkbox)
         
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         label.translatesAutoresizingMaskIntoConstraints = false
         checkbox.translatesAutoresizingMaskIntoConstraints = false

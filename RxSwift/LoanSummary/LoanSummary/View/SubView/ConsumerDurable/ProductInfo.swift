@@ -8,105 +8,42 @@
 import Foundation
 import UIKit
 
-class InfoView: UIView {
-    
-    let infoLabel: UILabel = {
-        
-        let label = UILabel()
-        label.font = label.font.withSize(18)
-        label.textColor = UIColor(red: 160/255, green: 160/255, blue: 160/255, alpha: 1)
-        return label
-        
-    }()
-    
-    let infoValue: UILabel = {
-        
-        let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "######"
-        return label
-        
-    }()
-    
-    func addSubViews() {
-        
-        self.addSubview(infoLabel)
-        self.addSubview(infoValue)
-        
-    }
-    
-    func addLayout() {
-        
-        infoLabel.translatesAutoresizingMaskIntoConstraints = false
-        infoValue.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            
-            infoLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
-            infoLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            infoLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            
-            infoValue.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
-            infoValue.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            infoValue.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        
-        ])
-        
-        infoValue.sizeToFit()
-        infoLabel.sizeToFit()
-    }
-    
-    //MARK: Overide Init
-    override init(frame: CGRect) {
-        
-        super.init(frame: frame)
-        self.backgroundColor = .white
-        addSubViews()
-        addLayout()
-    
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-      
-    }
-}
 
 class ProductInfoView: UIView {
     
-    let brandView: InfoView = {
+    private let brandView: InfoView = {
         
         let view = InfoView()
-        view.infoLabel.text = "Brand"
+        view.setInfoLabel(text: "Brand")
         return view
         
     }()
     
-    let modelView: InfoView = {
+    private let modelView: InfoView = {
         
         let view = InfoView()
-        view.infoLabel.text = "Model"
+        view.setInfoLabel(text: "Model")
         return view
         
     }()
     
-    let interestRateView: InfoView = {
+    private let interestRateView: InfoView = {
         
         let view = InfoView()
-        view.infoLabel.text = "Interest rate (monthly)"
+        view.setInfoLabel(text: "Interest rate (monthly)")
         return view
         
     }()
     
-    let insuranceView: InfoView = {
+    private let insuranceView: InfoView = {
         
         let view = InfoView()
-        view.infoLabel.text = "Insurance"
+        view.setInfoLabel(text: "Insurance")
         return view
         
     }()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(brandView)
         self.addSubview(modelView)
@@ -115,7 +52,7 @@ class ProductInfoView: UIView {
         
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         brandView.translatesAutoresizingMaskIntoConstraints = false
         modelView.translatesAutoresizingMaskIntoConstraints = false
@@ -154,7 +91,28 @@ class ProductInfoView: UIView {
     }
     
     required init?(coder: NSCoder) {
+        
         fatalError("init(coder:) has not been implemented")
+      
+    }
+    
+    func loadData(brand: String?, model: String?, interest: String?, insurance: String?) {
+        
+        if let brand = brand {
+            self.brandView.setInfoValue(value: brand)
+        }
+        
+        if let model = model {
+            self.modelView.setInfoValue(value: model)
+        }
+        
+        if let interest = interest {
+            self.interestRateView.setInfoValue(value: interest)
+        }
+        
+        if let insurance = insurance {
+            self.insuranceView.setInfoValue(value: insurance)
+        }
       
     }
 }

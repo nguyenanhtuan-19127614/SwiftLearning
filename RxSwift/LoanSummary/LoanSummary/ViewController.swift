@@ -3,6 +3,7 @@ class ViewController: UIViewController {
 
     let scrollView = UIScrollView()
     let contentView = LoanSummaryContentView()
+    let dataSource = LoanSummaryDataSource()
         
     func addSubViews() {
         self.view.addSubview(scrollView)
@@ -20,9 +21,7 @@ class ViewController: UIViewController {
             scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             scrollView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             scrollView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
-//            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-//            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            
+
             contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
@@ -35,6 +34,8 @@ class ViewController: UIViewController {
     
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        dataSource.setupDelegate(vc: self)
+        dataSource.fetchData()
         addSubViews()
         addLayout()
 
@@ -45,5 +46,11 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.topItem?.title = "Loan Summary"
     }
   
+    func loadData() {
+        
+        contentView.loadData()
+        print("loaded")
+        
+    }
    
 }

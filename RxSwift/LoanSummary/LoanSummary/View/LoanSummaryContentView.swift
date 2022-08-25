@@ -11,10 +11,10 @@ import UIKit
 class LoanSummaryContentView: UIView {
     
     //Top View
-    let topView = LoanTopView()
+    private let topView = LoanTopView()
     
     //Production Image
-    let productImage: UIImageView = {
+    private let productImage: UIImageView = {
         
         let imageView = UIImageView()
         imageView.image = UIImage(named: "testImage")
@@ -25,26 +25,26 @@ class LoanSummaryContentView: UIView {
     }()
     
     //Price View
-    let priceView = PriceView()
+    private let priceView = PriceView()
     
     //Product Info View
-    let productInfoView = ProductInfoView()
+    private let productInfoView = ProductInfoView()
     
     //Terminate Fee View
-    let terminateFeeView = TerminationFeeView()
+    private let terminateFeeView = TerminationFeeView()
     
     //More Detail View
-    let moreDetailView = MoreDetailView()
+    private let moreDetailView = MoreDetailView()
     
     //Agreement View
     
-    let agreementView = AgreementView()
+    private let agreementView = AgreementView()
     
     //Contract Detail
-    let contractDetailView = ContractDetailView()
+    private let contractDetailView = ContractDetailView()
 
     //Sign Button
-    let signButton: UIButton = {
+    private let signButton: UIButton = {
         
         let btn = UIButton()
         btn.layer.masksToBounds = true
@@ -58,7 +58,7 @@ class LoanSummaryContentView: UIView {
     }()
     
     //Reject Button
-    let rejectButton: UIButton = {
+    private let rejectButton: UIButton = {
         
         let color = UIColor(red: 80/255, green: 160/255, blue: 80/255, alpha: 1)
         let btn = UIButton()
@@ -75,7 +75,7 @@ class LoanSummaryContentView: UIView {
     }()
     
     //Close label
-    let closeLabel: UILabel = {
+    private let closeLabel: UILabel = {
         
         let label = UILabel()
         label.text = "Not now"
@@ -87,7 +87,7 @@ class LoanSummaryContentView: UIView {
     }()
     
     //add subview
-    func addSubViews() {
+    private func addSubViews() {
         self.addSubview(topView)
         self.addSubview(productImage)
         self.addSubview(priceView)
@@ -103,7 +103,7 @@ class LoanSummaryContentView: UIView {
     
 
     //add layout
-    func addLayout() {
+    private func addLayout() {
         
         topView.translatesAutoresizingMaskIntoConstraints = false
         productImage.translatesAutoresizingMaskIntoConstraints = false
@@ -119,7 +119,7 @@ class LoanSummaryContentView: UIView {
         
         NSLayoutConstraint.activate([
             
-            topView.topAnchor.constraint(equalTo: self.topAnchor, constant: 30),
+            topView.topAnchor.constraint(equalTo: self.topAnchor, constant: 40),
             topView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             topView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             topView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/9),
@@ -200,6 +200,10 @@ class LoanSummaryContentView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
       
+    }
+    
+    func loadData() {
+        
     }
     
 }

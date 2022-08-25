@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 class PriceView: UIView {
     
-    let approxLabel: UILabel = {
+    private let approxLabel: UILabel = {
         
         let label = UILabel()
         label.text = "APPROX."
@@ -19,7 +19,7 @@ class PriceView: UIView {
         
     }()
     
-    let approxPerMonth: UILabel = {
+    private let approxPerMonth: UILabel = {
         
         let label = UILabel()
 
@@ -31,7 +31,7 @@ class PriceView: UIView {
         
     }()
     
-    let approxMonthLabel: UILabel = {
+    private let approxMonthLabel: UILabel = {
         
         let label = UILabel()
         label.text = "for XX months"
@@ -40,7 +40,7 @@ class PriceView: UIView {
         
     }()
     
-    let approxContainer: UIView = {
+    private let approxContainer: UIView = {
        
         let view = UIView()
         view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
@@ -48,7 +48,7 @@ class PriceView: UIView {
         
     }()
     
-    let offerLabel: UILabel = {
+    private let offerLabel: UILabel = {
         
         let label = UILabel()
         label.text = "OFFER AMOUNT"
@@ -58,7 +58,7 @@ class PriceView: UIView {
         
     }()
     
-    let offerValue: UILabel = {
+    private let offerValue: UILabel = {
         
         let label = UILabel()
         label.text = "XX,XXX,XXX đ"
@@ -67,7 +67,7 @@ class PriceView: UIView {
         
     }()
     
-    let offerContainer: UIView = {
+    private let offerContainer: UIView = {
         
         let view = UIView()
         view.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
@@ -76,7 +76,7 @@ class PriceView: UIView {
         
     }()
     
-    let seperatorLine: UIView = {
+    private let seperatorLine: UIView = {
         
         let view = UIView()
         view.backgroundColor =  UIColor.gray
@@ -85,7 +85,7 @@ class PriceView: UIView {
         
     }()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(approxContainer)
         approxContainer.addSubview(approxLabel)
@@ -100,7 +100,7 @@ class PriceView: UIView {
         
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         approxContainer.translatesAutoresizingMaskIntoConstraints = false
         approxLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -172,5 +172,21 @@ class PriceView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
       
+    }
+    
+    func loadData(perMonth: String?, months: String?, offerValue: String?) {
+        
+        if let perMonth = perMonth {
+            self.approxPerMonth.text = "\(perMonth) đ/ month"
+        }
+
+        if let months = months {
+            self.approxMonthLabel.text = "for \(months) months"
+        }
+        
+        if let offerValue = offerValue {
+            self.offerValue.text = "\(offerValue) đ"
+        }
+        
     }
 }

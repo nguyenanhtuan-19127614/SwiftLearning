@@ -1,9 +1,14 @@
 import UIKit
 import RxSwift
 
-let helloRx = Observable.just("print")
-helloRx.subscribe { element in
-    print("hello ")
-}
-
+let observable = Observable<Void>.empty()
+   
+observable.subscribe(
+  onNext: { element in
+    print(element)
+},
+  onCompleted: {
+    print("Completed")
+  }
+)
 

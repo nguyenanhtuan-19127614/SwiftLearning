@@ -7,36 +7,37 @@
 
 import Foundation
 import UIKit
-class MoreDetailView: UIView {
+
+class ContractDetailView: UIView {
     
-    let label: UILabel = {
+    private let label: UILabel = {
         
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "More details"
+        label.text = "View contract details"
         label.textColor = UIColor(red: 81/255, green: 153/255, blue: 91/255, alpha: 1)
         return label
         
     }()
     
-    let image: UIImageView = {
+    private let image: UIImageView = {
         
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "moreDetail")
+        imageView.image = UIImage(named: "contactDetail")
         
         imageView.contentMode = .scaleToFill
         return imageView
         
     }()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(label)
         self.addSubview(image)
         
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         label.translatesAutoresizingMaskIntoConstraints = false
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -45,12 +46,12 @@ class MoreDetailView: UIView {
             
             label.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
             label.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            label.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            label.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             
             image.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
             image.widthAnchor.constraint(equalTo: self.heightAnchor, multiplier: 2/3),
             image.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            image.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            image.leadingAnchor.constraint(equalTo: label.trailingAnchor, constant: 5),
         
         ])
         

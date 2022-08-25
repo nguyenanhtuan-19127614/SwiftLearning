@@ -11,7 +11,7 @@ import UIKit
 class LoanTopView: UIView {
     
     //First Label on top
-    let viewLabel: UILabel = {
+    private let viewLabel: UILabel = {
         let label = UILabel()
         label.text = "Consumer Durable Loan"
         label.font = UIFont.boldSystemFont(ofSize: 30)
@@ -21,7 +21,7 @@ class LoanTopView: UIView {
     
     //offer expired label
     //label
-    let expiredLabel: UILabel = {
+    private let expiredLabel: UILabel = {
         let label = UILabel()
         
         let htmlString = "<span style=\"font-size: 25\"> Offer expires in <span style=\"color:#50A050\"><b>{n} days</b></span> </span>"
@@ -33,21 +33,21 @@ class LoanTopView: UIView {
     //app id label
     
     //label
-    let appIDLabel: UILabel = {
+    private let appIDLabel: UILabel = {
         let label = UILabel()
         label.text = "App ID: "
         label.font = label.font.withSize(12)
         return label
     }()
     //value
-    let appIDValue: UILabel = {
+    private let appIDValue: UILabel = {
         let label = UILabel()
         label.text = "########"
         label.font = UIFont.boldSystemFont(ofSize: 12)
         return label
     }()
     //container
-    let appIDContainer: UIView = {
+    private let appIDContainer: UIView = {
         
         let view = UIView()
         view.backgroundColor = UIColor(red: 235/255, green: 235/255, blue: 235/255, alpha: 0.5)
@@ -58,7 +58,7 @@ class LoanTopView: UIView {
     
     //let appID = AppIDView()
     
-    func addSubViews() {
+    private func addSubViews() {
         
         self.addSubview(viewLabel)
         self.addSubview(expiredLabel)
@@ -67,7 +67,7 @@ class LoanTopView: UIView {
         appIDContainer.addSubview(appIDValue)
     }
     
-    func addLayout() {
+    private func addLayout() {
         
         viewLabel.translatesAutoresizingMaskIntoConstraints = false
         expiredLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -118,15 +118,24 @@ class LoanTopView: UIView {
       
     }
     
-    func loadData(data: LoanSummaryDataModel) {
+    func loadData(appID: String?, expireDay: String?) {
+        
+        if let appID = appID  {
+            appIDValue.text = appID
+        }
         
         
-//        expiredValue.text = data.expireDay
-    
-        appIDValue.text = data.appID
-     
+        if let expireDay = expireDay {
+            
+            let htmlExpireLabel = "<span style=\"font-size: 25\"> Offer expires in <span style=\"color:#50A050\"><b>\(expireDay) days</b></span> </span>"
+            
+            expiredLabel.renderHTMLAtribute(htmlString: htmlExpireLabel)
+            
+        }
+        
     }
     
+   
 }
 
 
