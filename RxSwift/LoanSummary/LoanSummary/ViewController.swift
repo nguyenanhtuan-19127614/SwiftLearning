@@ -47,7 +47,6 @@ class ViewController: UIViewController {
     
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        self.view.backgroundColor = .blue
         dataSource.setupDelegate(vc: self)
         dataSource.fetchData()
         addSubViews()

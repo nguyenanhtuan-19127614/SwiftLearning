@@ -68,6 +68,7 @@ class LoanInfoView: UIView {
         ])
         
     }
+    
     //MARK: Overide Init
     override init(frame: CGRect) {
         

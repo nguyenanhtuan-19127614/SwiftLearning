@@ -36,11 +36,31 @@ class PersonalLoanContentView: UIView {
     }()
     
     //Offer View
-    private let offerView1 = OfferView()
+    private let offerView1: OfferView = {
+        
+        let view = OfferView()
+        view.isUserInteractionEnabled = true
+        return view
+        
+    }()
     
-    private let offerView2 = OfferView()
+    private let offerView2: OfferView = {
+        
+        let view = OfferView()
+        view.isUserInteractionEnabled = true
+        return view
+        
+    }()
     
-    private let offerView3 = OfferView()
+    private let offerView3: OfferView = {
+        
+        let view = OfferView()
+        view.isUserInteractionEnabled = true
+        return view
+        
+    }()
+    
+    private var offerViewList: [OfferView] = []
     
     //Offer View
     private let interestView1 = InterestRateView()
@@ -194,9 +214,18 @@ class PersonalLoanContentView: UIView {
         super.init(frame: frame)
         self.backgroundColor = .white
         topView.setupViewLabel(text: "Personal Loan")
+        offerViewList = [offerView1,offerView2,offerView3]
         addSubViews()
         addLayout()
+        
+        let offerView1Tap = UITapGestureRecognizer(target: self, action: #selector(offerView1Tap(sender:)))
+        let offerView2Tap = UITapGestureRecognizer(target: self, action: #selector(offerView2Tap(sender:)))
+        let offerView3Tap = UITapGestureRecognizer(target: self, action: #selector(offerView3Tap(sender:)))
     
+        offerView1.addGestureRecognizer(offerView1Tap)
+        offerView2.addGestureRecognizer(offerView2Tap)
+        offerView3.addGestureRecognizer(offerView3Tap)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -213,6 +242,41 @@ class PersonalLoanContentView: UIView {
         confirmButton.setGradientBackground(colors: [startColor,endColor])
         
     }
+    
+    
+    func handleOfferViewTap(index: Int) {
+        
+        if index > offerViewList.count {
+            return
+        }
+        
+        for i in 0...offerViewList.count-1 {
+            
+            if i == index {
+                offerViewList[i].selected()
+            } else {
+                offerViewList[i].unselected()
+            }
+            
+        }
+    }
+    
+    @objc func offerView1Tap(sender : UITapGestureRecognizer) {
+        
+        self.handleOfferViewTap(index: 0)
+        
+    }
+    @objc func offerView2Tap(sender : UITapGestureRecognizer) {
+    
+        self.handleOfferViewTap(index: 1)
+        
+    }
+    @objc func offerView3Tap(sender : UITapGestureRecognizer) {
+    
+        self.handleOfferViewTap(index: 2)
+        
+    }
+    
     
     func loadData() {
         

@@ -37,7 +37,7 @@ class InterestRateView: UIView {
         
         let label = UILabel()
         label.text = "{n}%"
-        label.font = UIFont.boldSystemFont(ofSize: 15)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
       
         label.sizeToFit()
         
@@ -84,8 +84,6 @@ class InterestRateView: UIView {
         self.layer.cornerRadius = 7
         self.layer.borderWidth = 0.5
         self.layer.borderColor = UIColor.lightGray.cgColor
-        
-        self.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
         
         self.addSubViews()
         self.addLayout()

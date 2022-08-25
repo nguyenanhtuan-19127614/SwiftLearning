@@ -10,6 +10,13 @@ import UIKit
 
 class OfferView: UIView {
     
+    private var personalContentDelegate: PersonalLoanContentView?
+    private let checkBorderColor: UIColor = UIColor(red: 60/255, green: 160/255, blue: 80/255, alpha: 1)
+    private let checkBackgroundColor: UIColor = UIColor(red: 238/255, green: 255/255, blue: 234/255, alpha: 1)
+    
+    //Radio Button
+    private let radioButton = RadioButton()
+    
     //Offer Amount
     private let offerAmountContainer: UIView = {
         
@@ -94,6 +101,7 @@ class OfferView: UIView {
     
     private func addSubViews() {
         
+        self.addSubview(radioButton)
         self.addSubview(offerAmountContainer)
         self.addSubview(firstApproxContainer)
         self.addSubview(thenApproxContainer)
@@ -108,6 +116,8 @@ class OfferView: UIView {
     
     private func addLayout() {
         
+        radioButton.translatesAutoresizingMaskIntoConstraints = false
+        
         offerAmountContainer.translatesAutoresizingMaskIntoConstraints = false
         firstApproxContainer.translatesAutoresizingMaskIntoConstraints = false
         thenApproxContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -119,6 +129,12 @@ class OfferView: UIView {
         tenorValue.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            
+            //Radio Button
+            radioButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            radioButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            radioButton.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/18),
+            radioButton.heightAnchor.constraint(equalTo: radioButton.widthAnchor),
             
             //Containter
             offerAmountContainer.topAnchor.constraint(equalTo: self.topAnchor),
@@ -155,6 +171,10 @@ class OfferView: UIView {
       
     }
     
+    func setupDelegate(_ personalLoanContentView: PersonalLoanContentView) {
+        self.personalContentDelegate = personalLoanContentView
+    }
+    
     //MARK: Overide Init
     override init(frame: CGRect) {
         
@@ -169,6 +189,8 @@ class OfferView: UIView {
         
         self.addSubViews()
         self.addLayout()
+        
+       
     }
     
     required init?(coder: NSCoder) {
@@ -176,6 +198,43 @@ class OfferView: UIView {
       
     }
     
+    func selected() {
+        radioButton.turnOn()
+        UIView.transition(with: self, duration: 0.2, options: .transitionCrossDissolve, animations: {
+            
+            [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            
+            self.layer.borderWidth = 4
+            self.layer.borderColor = self.checkBorderColor.cgColor
+            self.backgroundColor =  self.checkBackgroundColor
+            
+        }, completion: nil)
+    }
+    
+    func unselected() {
+        
+        radioButton.turnOff()
+        UIView.transition(with: self, duration: 0.2, options: .transitionCrossDissolve, animations: {
+            
+            [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            
+            self.layer.borderWidth = 0.5
+            self.layer.borderColor = UIColor.lightGray.cgColor
+            self.backgroundColor =  UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 0.5)
+            
+            
+        }, completion: nil)
+    }
+    
+   
 }
 
 fileprivate class PersonalApproxContainer: UIView {
