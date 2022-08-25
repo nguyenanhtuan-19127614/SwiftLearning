@@ -13,7 +13,6 @@ class LoanTopView: UIView {
     //First Label on top
     private let viewLabel: UILabel = {
         let label = UILabel()
-        label.text = "Consumer Durable Loan"
         label.font = UIFont.boldSystemFont(ofSize: 30)
        
         return label
@@ -56,7 +55,11 @@ class LoanTopView: UIView {
         return view
     }()
     
-    //let appID = AppIDView()
+    func setupViewLabel(text: String) {
+        
+        self.viewLabel.text = text
+        
+    }
     
     private func addSubViews() {
         

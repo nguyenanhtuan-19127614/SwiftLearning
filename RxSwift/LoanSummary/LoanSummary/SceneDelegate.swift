@@ -19,11 +19,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
               }
                       
         let window = UIWindow(windowScene: windowScene)
+        
         let mainVC = ViewController()
-        mainVC.setupContentView(type: .ConsumerDurable)
+        //mainVC.setupContentView(type: .ConsumerDurable)
+        mainVC.setupContentView(type: .PersonalLoan)
+        
         let nav = UINavigationController(rootViewController: mainVC)
         nav.navigationBar.isTranslucent = false
         nav.navigationBar.backgroundColor = .white
+        
         window.rootViewController = nav
         window.makeKeyAndVisible()
         self.window = window

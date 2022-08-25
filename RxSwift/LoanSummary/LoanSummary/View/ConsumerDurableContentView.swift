@@ -170,8 +170,9 @@ class ConsumerDurableContentView: UIView {
             rejectButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
             rejectButton.heightAnchor.constraint(equalToConstant: 50),
             
-            closeLabel.topAnchor.constraint(equalTo: rejectButton.bottomAnchor, constant: 30),
+            closeLabel.topAnchor.constraint(equalTo: rejectButton.bottomAnchor),
             closeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            closeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)
             
         ])
         
@@ -182,9 +183,15 @@ class ConsumerDurableContentView: UIView {
         
         super.init(frame: frame)
         self.backgroundColor = .white
+        topView.setupViewLabel(text: "Consumer Durable Loan")
         addSubViews()
         addLayout()
     
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+      
     }
     
     override func layoutSubviews() {
@@ -197,10 +204,6 @@ class ConsumerDurableContentView: UIView {
         
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-      
-    }
     
     func loadData() {
         

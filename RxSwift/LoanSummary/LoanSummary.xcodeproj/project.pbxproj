@@ -31,6 +31,7 @@
 		86CC951428B72F3F008D71A4 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951328B72F3F008D71A4 /* InfoView.swift */; };
 		86CC951728B73142008D71A4 /* PersonalLoanContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951628B73142008D71A4 /* PersonalLoanContentView.swift */; };
 		86CC951928B7317C008D71A4 /* ContentViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951828B7317C008D71A4 /* ContentViewType.swift */; };
+		86CC951D28B756BF008D71A4 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC951C28B756BF008D71A4 /* OfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		86CC951328B72F3F008D71A4 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		86CC951628B73142008D71A4 /* PersonalLoanContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalLoanContentView.swift; sourceTree = "<group>"; };
 		86CC951828B7317C008D71A4 /* ContentViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewType.swift; sourceTree = "<group>"; };
+		86CC951C28B756BF008D71A4 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
 		87F24AF8E13E524A20F54819 /* Pods_LoanSummary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanSummary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98FDDE1C828D76FE92193F78 /* Pods-LoanSummary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.debug.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BD2E7FA028E9CBD944D746 /* Pods-LoanSummary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanSummary.release.xcconfig"; path = "Target Support Files/Pods-LoanSummary/Pods-LoanSummary.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		86CC951528B72F86008D71A4 /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				86CC951C28B756BF008D71A4 /* OfferView.swift */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C262BA28B62176004E7A3C /* MoreDetailView.swift in Sources */,
+				86CC951D28B756BF008D71A4 /* OfferView.swift in Sources */,
 				86C2628A28B5D497004E7A3C /* ViewController.swift in Sources */,
 				86C262C728B63A86004E7A3C /* UILabelExtension.swift in Sources */,
 				86C262A128B5E5C9004E7A3C /* ConsumerDurableContentView.swift in Sources */,
