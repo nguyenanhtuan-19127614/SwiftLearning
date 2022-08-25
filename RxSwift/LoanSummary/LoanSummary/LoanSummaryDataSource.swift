@@ -32,8 +32,8 @@ class LoanSummaryDataSource {
             (result: Result<DataModel,Error>) in
             
             switch result {
-            case .success(let success):
-                print(success)
+            case .success( _):
+                //print(success)
                 self.delegate?.loadData()
             case .failure(let failure):
                 print(failure)

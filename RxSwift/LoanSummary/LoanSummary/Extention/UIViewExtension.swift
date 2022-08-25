@@ -10,6 +10,8 @@ import UIKit
 
 extension UIView {
     
+    
+    //Normal fubnc
     func setGradientBackground(colors: [CGColor]) {
         
         self.layoutIfNeeded()
@@ -39,3 +41,4 @@ extension UIView {
     }
     
 }
+

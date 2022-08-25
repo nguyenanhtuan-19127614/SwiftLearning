@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                       
         let window = UIWindow(windowScene: windowScene)
         let mainVC = ViewController()
+        mainVC.setupContentView(type: .ConsumerDurable)
         let nav = UINavigationController(rootViewController: mainVC)
         nav.navigationBar.isTranslucent = false
         nav.navigationBar.backgroundColor = .white

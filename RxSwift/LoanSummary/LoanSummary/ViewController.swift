@@ -1,10 +1,23 @@
 import UIKit
 class ViewController: UIViewController {
 
-    let scrollView = UIScrollView()
-    let contentView = LoanSummaryContentView()
-    let dataSource = LoanSummaryDataSource()
+    private let scrollView = UIScrollView()
+    private var contentView = UIView()
+    //let contentView = ConsumerDurableContentView()
+    private let dataSource = LoanSummaryDataSource()
         
+    func setupContentView(type: ContentViewType) {
+        
+        switch type {
+        case .PersonalLoan:
+            contentView = PersonalLoanContentView()
+        
+        case .ConsumerDurable:
+            contentView = ConsumerDurableContentView()
+        }
+        
+    }
+    
     func addSubViews() {
         self.view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -48,7 +61,31 @@ class ViewController: UIViewController {
   
     func loadData() {
         
-        contentView.loadData()
+        
+        //Load data base on content
+        switch contentView {
+            
+        case is ConsumerDurableContentView:
+           
+            guard let contentView = contentView as? ConsumerDurableContentView else {
+                return
+            }
+            contentView.loadData()
+            
+            
+        case is PersonalLoanContentView:
+            
+            guard let contentView = (contentView as? PersonalLoanContentView) else {
+                return
+        
+            }
+            contentView.loadData()
+            
+        default:
+            return
+            
+        }
+        
         print("loaded")
         
     }
