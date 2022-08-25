@@ -200,7 +200,7 @@ class OfferView: UIView {
     
     func selected() {
         radioButton.turnOn()
-        UIView.transition(with: self, duration: 0.2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: self, duration: 0.1, options: .transitionCrossDissolve, animations: {
             
             [weak self] in
             guard let self = self else {
@@ -218,7 +218,7 @@ class OfferView: UIView {
     func unselected() {
         
         radioButton.turnOff()
-        UIView.transition(with: self, duration: 0.2, options: .transitionCrossDissolve, animations: {
+        UIView.transition(with: self, duration: 0.1, options: .transitionCrossDissolve, animations: {
             
             [weak self] in
             guard let self = self else {
