@@ -1,5 +1,5 @@
 //
-//  DurableView.swift
+//  SignButton.swift
 //  LoanSummaryWithXIB
 //
 //  Created by Wee on 26/08/2022.
@@ -8,11 +8,10 @@
 import Foundation
 import UIKit
 
-class DurableView: UIView {
+class SignButton: UIButton {
     
-    @IBOutlet var contentView: UIView!
-    
-    let XIB_NAME = "DurableViewXIB"
+    @IBOutlet var contentView: CustomButton!
+    let XIB_NAME = "SignButtonXIB"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,20 +25,10 @@ class DurableView: UIView {
         
     }
     
-    override func layoutSubviews() {
-        
-        super.layoutSubviews()
-//        let startColor = UIColor(red: 20/255, green: 140/255, blue: 80/255, alpha: 1).cgColor
-//        let endColor = UIColor(red: 100/255, green: 140/255, blue: 80/255, alpha: 1).cgColor
-//        signBtn.setGradientBackground(colors: [startColor,endColor])
-    }
-    
     func commonInit() {
         
         Bundle.main.loadNibNamed(XIB_NAME, owner: self)
         contentView.fixInView(self)
-        
-        
         
     }
     

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RejectButton" customModule="LoanSummaryWithXIB" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="ohP-Te-gLi" id="mPF-E8-o5O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ohP-Te-gLi" customClass="CustomButton" customModule="LoanSummaryWithXIB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button"/>
+            <buttonConfiguration key="configuration" style="filled">
+                <attributedString key="attributedTitle">
+                    <fragment content="REJECT OFFER">
+                        <attributes>
+                            <color key="NSColor" red="0.23611989620000001" green="0.63485199209999998" blue="0.33327746390000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <font key="NSFont" size="20" name="Arial-BoldMT"/>
+                        </attributes>
+                    </fragment>
+                </attributedString>
+                <color key="baseBackgroundColor" red="0.97647064920000004" green="0.97647064920000004" blue="0.97647064920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            </buttonConfiguration>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                    <color key="value" red="0.50194025040000001" green="0.65312647820000003" blue="0.49801689389999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="6"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" red="0.32555520529999998" green="0.61111921069999997" blue="0.33328235150000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="72"/>
+        </button>
+    </objects>
+    <designables>
+        <designable name="ohP-Te-gLi">
+            <size key="intrinsicContentSize" width="176.5" height="36.5"/>
+        </designable>
+    </designables>
+</document>

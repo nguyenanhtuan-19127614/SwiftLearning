@@ -20,8 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                              
                let window = UIWindow(windowScene: windowScene)
                
-               let mainVC = ConsumerDurableVC()
+               //let mainVC = ConsumerDurableVC()
+               let mainVC = CustomerDurableVC2()
                
+        
                let nav = UINavigationController(rootViewController: mainVC)
         
                nav.navigationBar.isTranslucent = false

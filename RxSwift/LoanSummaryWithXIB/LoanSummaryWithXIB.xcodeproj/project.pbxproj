@@ -27,6 +27,16 @@
 		86CC958828B8BDA2008D71A4 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958728B8BDA2008D71A4 /* AgreementView.swift */; };
 		86CC958A28B8BDAE008D71A4 /* AgreementViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC958928B8BDAE008D71A4 /* AgreementViewXIB.xib */; };
 		86CC958D28B8BFB9008D71A4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958C28B8BFB9008D71A4 /* CustomButton.swift */; };
+		86CC959028B8CC69008D71A4 /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958F28B8CC69008D71A4 /* SignButton.swift */; };
+		86CC959228B8CC82008D71A4 /* SignButtonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */; };
+		86CC959428B8CF16008D71A4 /* CustomerDurableVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC959328B8CF16008D71A4 /* CustomerDurableVC2.swift */; };
+		86CC959628B8CFAC008D71A4 /* DurableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC959528B8CFAC008D71A4 /* DurableContentView.swift */; };
+		86CC959928B8D610008D71A4 /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC959828B8D610008D71A4 /* ContractDetailView.swift */; };
+		86CC959F28B8D76F008D71A4 /* ContractDetailViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */; };
+		86CC95A228B8D98C008D71A4 /* RejectButtonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */; };
+		86CC95A428B8D9B0008D71A4 /* RejectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A328B8D9B0008D71A4 /* RejectButton.swift */; };
+		86CC95A728B8DB05008D71A4 /* MoreDetailViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */; };
+		86CC95A928B8DB7D008D71A4 /* MoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +62,16 @@
 		86CC958728B8BDA2008D71A4 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
 		86CC958928B8BDAE008D71A4 /* AgreementViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementViewXIB.xib; sourceTree = "<group>"; };
 		86CC958C28B8BFB9008D71A4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		86CC958F28B8CC69008D71A4 /* SignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
+		86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignButtonXIB.xib; sourceTree = "<group>"; };
+		86CC959328B8CF16008D71A4 /* CustomerDurableVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDurableVC2.swift; sourceTree = "<group>"; };
+		86CC959528B8CFAC008D71A4 /* DurableContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurableContentView.swift; sourceTree = "<group>"; };
+		86CC959828B8D610008D71A4 /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
+		86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractDetailViewXIB.xib; sourceTree = "<group>"; };
+		86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RejectButtonXIB.xib; sourceTree = "<group>"; };
+		86CC95A328B8D9B0008D71A4 /* RejectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectButton.swift; sourceTree = "<group>"; };
+		86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailViewXIB.xib; sourceTree = "<group>"; };
+		86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +109,7 @@
 				86CC953228B86623008D71A4 /* AppDelegate.swift */,
 				86CC953428B86623008D71A4 /* SceneDelegate.swift */,
 				86CC957B28B8AC1B008D71A4 /* ConsumerDurableVC.swift */,
+				86CC959328B8CF16008D71A4 /* CustomerDurableVC2.swift */,
 				86CC953828B86623008D71A4 /* Main.storyboard */,
 				86CC953B28B86625008D71A4 /* Assets.xcassets */,
 				86CC953D28B86625008D71A4 /* LaunchScreen.storyboard */,
@@ -110,12 +131,17 @@
 		86CC954928B86801008D71A4 /* ConsumerDurable */ = {
 			isa = PBXGroup;
 			children = (
+				86CC959528B8CFAC008D71A4 /* DurableContentView.swift */,
 				86CC957928B8AA8F008D71A4 /* DurableViewXIB.xib */,
 				86CC957728B8A80E008D71A4 /* DurableView.swift */,
 				86CC955328B87564008D71A4 /* LoanTopView */,
 				86CC955528B87CAF008D71A4 /* PriceView */,
 				86CC957D28B8AC54008D71A4 /* FeeView */,
+				86CC95A528B8DAEB008D71A4 /* MoreDetailView */,
 				86CC958628B8BD8B008D71A4 /* AgreementView */,
+				86CC959728B8D5F7008D71A4 /* ContractDetailView */,
+				86CC958E28B8CC60008D71A4 /* SignButton */,
+				86CC95A028B8D96C008D71A4 /* RejectButton */,
 			);
 			path = ConsumerDurable;
 			sourceTree = "<group>";
@@ -189,6 +215,42 @@
 			path = AgreementView;
 			sourceTree = "<group>";
 		};
+		86CC958E28B8CC60008D71A4 /* SignButton */ = {
+			isa = PBXGroup;
+			children = (
+				86CC958F28B8CC69008D71A4 /* SignButton.swift */,
+				86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */,
+			);
+			path = SignButton;
+			sourceTree = "<group>";
+		};
+		86CC959728B8D5F7008D71A4 /* ContractDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				86CC959828B8D610008D71A4 /* ContractDetailView.swift */,
+				86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */,
+			);
+			path = ContractDetailView;
+			sourceTree = "<group>";
+		};
+		86CC95A028B8D96C008D71A4 /* RejectButton */ = {
+			isa = PBXGroup;
+			children = (
+				86CC95A328B8D9B0008D71A4 /* RejectButton.swift */,
+				86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */,
+			);
+			path = RejectButton;
+			sourceTree = "<group>";
+		};
+		86CC95A528B8DAEB008D71A4 /* MoreDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */,
+				86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */,
+			);
+			path = MoreDetailView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,8 +315,12 @@
 				86CC955928B87CC8008D71A4 /* PriceView.xib in Resources */,
 				86CC953F28B86625008D71A4 /* LaunchScreen.storyboard in Resources */,
 				86CC958328B8ADDD008D71A4 /* FeeViewXIB.xib in Resources */,
+				86CC959228B8CC82008D71A4 /* SignButtonXIB.xib in Resources */,
 				86CC953C28B86625008D71A4 /* Assets.xcassets in Resources */,
+				86CC95A228B8D98C008D71A4 /* RejectButtonXIB.xib in Resources */,
+				86CC959F28B8D76F008D71A4 /* ContractDetailViewXIB.xib in Resources */,
 				86CC958A28B8BDAE008D71A4 /* AgreementViewXIB.xib in Resources */,
+				86CC95A728B8DB05008D71A4 /* MoreDetailViewXIB.xib in Resources */,
 				86CC953A28B86623008D71A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,12 +334,18 @@
 			files = (
 				86CC955228B86F8A008D71A4 /* UIViewExtension.swift in Sources */,
 				86CC954C28B868D9008D71A4 /* LoanTopView.swift in Sources */,
+				86CC959628B8CFAC008D71A4 /* DurableContentView.swift in Sources */,
 				86CC955B28B8834F008D71A4 /* PriceView.swift in Sources */,
 				86CC953328B86623008D71A4 /* AppDelegate.swift in Sources */,
 				86CC953528B86623008D71A4 /* SceneDelegate.swift in Sources */,
+				86CC95A428B8D9B0008D71A4 /* RejectButton.swift in Sources */,
+				86CC95A928B8DB7D008D71A4 /* MoreDetailView.swift in Sources */,
 				86CC957F28B8AC76008D71A4 /* FeeView.swift in Sources */,
+				86CC959428B8CF16008D71A4 /* CustomerDurableVC2.swift in Sources */,
 				86CC957C28B8AC1B008D71A4 /* ConsumerDurableVC.swift in Sources */,
 				86CC958D28B8BFB9008D71A4 /* CustomButton.swift in Sources */,
+				86CC959028B8CC69008D71A4 /* SignButton.swift in Sources */,
+				86CC959928B8D610008D71A4 /* ContractDetailView.swift in Sources */,
 				86CC957828B8A80E008D71A4 /* DurableView.swift in Sources */,
 				86CC958828B8BDA2008D71A4 /* AgreementView.swift in Sources */,
 				86CC956A28B88C66008D71A4 /* PropertiesView.swift in Sources */,
