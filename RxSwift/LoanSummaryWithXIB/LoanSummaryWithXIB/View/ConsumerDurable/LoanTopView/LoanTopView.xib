@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoanTopView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="EF2-g5-13s" id="jGZ-ts-lbh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EF2-g5-13s">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consumer Durable Loan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEp-BV-KZS">
+                    <rect key="frame" x="30" y="54" width="290" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIh-bW-wfJ">
+                    <rect key="frame" x="30" y="92" width="290" height="24"/>
+                    <color key="tintColor" name="AccentColor"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Offer expires in ">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="20"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="{n} days">
+                            <attributes>
+                                <color key="NSColor" red="0.3181916657831152" green="1" blue="0.31620915553982998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="20"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axt-up-cYE">
+                    <rect key="frame" x="30" y="126" width="128.5" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="App ID:">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="########">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <font key="NSFont" size="17" name=".SFNS-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="prb-FF-8c8"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QIh-bW-wfJ" firstAttribute="top" secondItem="bEp-BV-KZS" secondAttribute="bottom" constant="8" id="Ii9-ZO-RiE"/>
+                <constraint firstItem="prb-FF-8c8" firstAttribute="trailing" secondItem="bEp-BV-KZS" secondAttribute="trailing" constant="30" id="LJz-rF-ApH"/>
+                <constraint firstItem="axt-up-cYE" firstAttribute="top" secondItem="QIh-bW-wfJ" secondAttribute="bottom" constant="10" id="SqT-NZ-ZD5"/>
+                <constraint firstItem="bEp-BV-KZS" firstAttribute="top" secondItem="prb-FF-8c8" secondAttribute="top" constant="10" id="epI-Ap-mKB"/>
+                <constraint firstItem="QIh-bW-wfJ" firstAttribute="leading" secondItem="prb-FF-8c8" secondAttribute="leading" constant="30" id="gsW-yF-2Lj"/>
+                <constraint firstItem="QIh-bW-wfJ" firstAttribute="top" secondItem="bEp-BV-KZS" secondAttribute="bottom" constant="8" id="nwO-Lh-I0r"/>
+                <constraint firstItem="axt-up-cYE" firstAttribute="leading" secondItem="prb-FF-8c8" secondAttribute="leading" constant="30" id="rM9-ik-a7n"/>
+                <constraint firstItem="prb-FF-8c8" firstAttribute="trailing" secondItem="QIh-bW-wfJ" secondAttribute="trailing" constant="30" id="yun-q6-E76"/>
+                <constraint firstItem="bEp-BV-KZS" firstAttribute="leading" secondItem="prb-FF-8c8" secondAttribute="leading" constant="30" id="zUp-lQ-O1t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-391.07142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
