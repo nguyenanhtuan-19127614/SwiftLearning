@@ -11,7 +11,7 @@ import UIKit
 class SignButton: UIButton {
     
     @IBOutlet var contentView: CustomButton!
-    let XIB_NAME = "SignButtonXIB"
+    let XIB_NAME = "SignButton"
     
     override init(frame: CGRect) {
         super.init(frame: frame)

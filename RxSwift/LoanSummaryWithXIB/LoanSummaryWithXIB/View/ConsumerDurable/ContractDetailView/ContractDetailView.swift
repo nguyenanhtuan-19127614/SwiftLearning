@@ -12,7 +12,7 @@ class ContractDetailView: UIView {
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var label: UILabel!
-    let XIB_NAME = "ContractDetailViewXIB"
+    let XIB_NAME = "ContractDetailView"
     
     override init(frame: CGRect) {
         super.init(frame: frame)

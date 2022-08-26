@@ -56,6 +56,11 @@
             <point key="canvasLocation" x="59" y="48"/>
         </view>
     </objects>
+    <designables>
+        <designable name="RWs-47-1xu">
+            <size key="intrinsicContentSize" width="24" height="14"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

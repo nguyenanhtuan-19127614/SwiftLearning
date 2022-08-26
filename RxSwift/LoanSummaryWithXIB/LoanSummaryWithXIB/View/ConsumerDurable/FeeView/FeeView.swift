@@ -12,7 +12,7 @@ class FeeView: UIView {
     
     @IBOutlet weak var feeLabel: UILabel!
     @IBOutlet var contentView: UIView!
-    let XIB_NAME = "FeeViewXIB"
+    let XIB_NAME = "FeeView"
     
     override init(frame: CGRect) {
         super.init(frame: frame)

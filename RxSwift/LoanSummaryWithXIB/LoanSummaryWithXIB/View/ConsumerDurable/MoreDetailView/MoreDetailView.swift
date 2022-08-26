@@ -11,7 +11,7 @@ import UIKit
 class MoreDetailView: UIView {
     
     @IBOutlet var contentView: UIView!
-    let XIB_NAME = "MoreDetailViewXIB"
+    let XIB_NAME = "MoreDetailView"
     
     override init(frame: CGRect) {
         super.init(frame: frame)

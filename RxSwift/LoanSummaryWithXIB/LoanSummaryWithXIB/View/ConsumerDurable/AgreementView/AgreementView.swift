@@ -14,7 +14,7 @@ class AgreementView: UIView {
     @IBOutlet weak var agreementLabel: UILabel!
     @IBOutlet weak var checkbox: UIButton!
     
-    let XIB_NAME = "AgreementViewXIB"
+    let XIB_NAME = "AgreementView"
     private let defaultColor: UIColor = UIColor(red: 245/255, green: 245/255, blue: 245/255, alpha: 1)
     private let checkedColor: UIColor = UIColor(red: 60/255, green: 160/255, blue: 80/255, alpha: 1)
     var isChecked: Bool = false

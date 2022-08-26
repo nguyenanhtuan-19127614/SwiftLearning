@@ -246,5 +246,4 @@ class ConsumerDurableContentView: UIView {
     }
     
     
-    
 }

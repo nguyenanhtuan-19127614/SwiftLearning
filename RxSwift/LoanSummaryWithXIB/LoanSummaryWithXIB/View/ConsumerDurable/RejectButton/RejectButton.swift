@@ -11,7 +11,7 @@ import UIKit
 class RejectButton: UIButton {
     
     @IBOutlet var contentView: CustomButton!
-    let XIB_NAME = "RejectButtonXIB"
+    let XIB_NAME = "RejectButton"
     
     override init(frame: CGRect) {
         super.init(frame: frame)

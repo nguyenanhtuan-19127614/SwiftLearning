@@ -21,18 +21,18 @@
 		86CC956A28B88C66008D71A4 /* PropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC956928B88C66008D71A4 /* PropertiesView.swift */; };
 		86CC957C28B8AC1B008D71A4 /* ConsumerDurableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC957B28B8AC1B008D71A4 /* ConsumerDurableVC.swift */; };
 		86CC957F28B8AC76008D71A4 /* FeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC957E28B8AC76008D71A4 /* FeeView.swift */; };
-		86CC958328B8ADDD008D71A4 /* FeeViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC958228B8ADDD008D71A4 /* FeeViewXIB.xib */; };
+		86CC958328B8ADDD008D71A4 /* FeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC958228B8ADDD008D71A4 /* FeeView.xib */; };
 		86CC958828B8BDA2008D71A4 /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958728B8BDA2008D71A4 /* AgreementView.swift */; };
-		86CC958A28B8BDAE008D71A4 /* AgreementViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC958928B8BDAE008D71A4 /* AgreementViewXIB.xib */; };
+		86CC958A28B8BDAE008D71A4 /* AgreementView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC958928B8BDAE008D71A4 /* AgreementView.xib */; };
 		86CC958D28B8BFB9008D71A4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958C28B8BFB9008D71A4 /* CustomButton.swift */; };
 		86CC959028B8CC69008D71A4 /* SignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC958F28B8CC69008D71A4 /* SignButton.swift */; };
-		86CC959228B8CC82008D71A4 /* SignButtonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */; };
+		86CC959228B8CC82008D71A4 /* SignButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959128B8CC82008D71A4 /* SignButton.xib */; };
 		86CC959628B8CFAC008D71A4 /* DurableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC959528B8CFAC008D71A4 /* DurableContentView.swift */; };
 		86CC959928B8D610008D71A4 /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC959828B8D610008D71A4 /* ContractDetailView.swift */; };
-		86CC959F28B8D76F008D71A4 /* ContractDetailViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */; };
-		86CC95A228B8D98C008D71A4 /* RejectButtonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */; };
+		86CC959F28B8D76F008D71A4 /* ContractDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC959E28B8D76F008D71A4 /* ContractDetailView.xib */; };
+		86CC95A228B8D98C008D71A4 /* RejectButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A128B8D98C008D71A4 /* RejectButton.xib */; };
 		86CC95A428B8D9B0008D71A4 /* RejectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A328B8D9B0008D71A4 /* RejectButton.swift */; };
-		86CC95A728B8DB05008D71A4 /* MoreDetailViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */; };
+		86CC95A728B8DB05008D71A4 /* MoreDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A628B8DB05008D71A4 /* MoreDetailView.xib */; };
 		86CC95A928B8DB7D008D71A4 /* MoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,18 +53,18 @@
 		86CC956928B88C66008D71A4 /* PropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesView.swift; sourceTree = "<group>"; };
 		86CC957B28B8AC1B008D71A4 /* ConsumerDurableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumerDurableVC.swift; sourceTree = "<group>"; };
 		86CC957E28B8AC76008D71A4 /* FeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeView.swift; sourceTree = "<group>"; };
-		86CC958228B8ADDD008D71A4 /* FeeViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeViewXIB.xib; sourceTree = "<group>"; };
+		86CC958228B8ADDD008D71A4 /* FeeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeeView.xib; sourceTree = "<group>"; };
 		86CC958728B8BDA2008D71A4 /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
-		86CC958928B8BDAE008D71A4 /* AgreementViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementViewXIB.xib; sourceTree = "<group>"; };
+		86CC958928B8BDAE008D71A4 /* AgreementView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementView.xib; sourceTree = "<group>"; };
 		86CC958C28B8BFB9008D71A4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		86CC958F28B8CC69008D71A4 /* SignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignButton.swift; sourceTree = "<group>"; };
-		86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignButtonXIB.xib; sourceTree = "<group>"; };
+		86CC959128B8CC82008D71A4 /* SignButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignButton.xib; sourceTree = "<group>"; };
 		86CC959528B8CFAC008D71A4 /* DurableContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurableContentView.swift; sourceTree = "<group>"; };
 		86CC959828B8D610008D71A4 /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
-		86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractDetailViewXIB.xib; sourceTree = "<group>"; };
-		86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RejectButtonXIB.xib; sourceTree = "<group>"; };
+		86CC959E28B8D76F008D71A4 /* ContractDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractDetailView.xib; sourceTree = "<group>"; };
+		86CC95A128B8D98C008D71A4 /* RejectButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RejectButton.xib; sourceTree = "<group>"; };
 		86CC95A328B8D9B0008D71A4 /* RejectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectButton.swift; sourceTree = "<group>"; };
-		86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailViewXIB.xib; sourceTree = "<group>"; };
+		86CC95A628B8DB05008D71A4 /* MoreDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailView.xib; sourceTree = "<group>"; };
 		86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,11 +98,11 @@
 		86CC953128B86623008D71A4 /* LoanSummaryWithXIB */ = {
 			isa = PBXGroup;
 			children = (
-				86CC955C28B888A9008D71A4 /* Extension */,
-				86CC954828B866E7008D71A4 /* View */,
 				86CC953228B86623008D71A4 /* AppDelegate.swift */,
 				86CC953428B86623008D71A4 /* SceneDelegate.swift */,
 				86CC957B28B8AC1B008D71A4 /* ConsumerDurableVC.swift */,
+				86CC954828B866E7008D71A4 /* View */,
+				86CC955C28B888A9008D71A4 /* Extension */,
 				86CC953828B86623008D71A4 /* Main.storyboard */,
 				86CC953B28B86625008D71A4 /* Assets.xcassets */,
 				86CC953D28B86625008D71A4 /* LaunchScreen.storyboard */,
@@ -125,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				86CC959528B8CFAC008D71A4 /* DurableContentView.swift */,
-				86CC955328B87564008D71A4 /* LoanTopView */,
 				86CC955528B87CAF008D71A4 /* PriceView */,
 				86CC957D28B8AC54008D71A4 /* FeeView */,
 				86CC95A528B8DAEB008D71A4 /* MoreDetailView */,
@@ -156,8 +155,8 @@
 		86CC955528B87CAF008D71A4 /* PriceView */ = {
 			isa = PBXGroup;
 			children = (
-				86CC955828B87CC8008D71A4 /* PriceView.xib */,
 				86CC955A28B8834F008D71A4 /* PriceView.swift */,
+				86CC955828B87CC8008D71A4 /* PriceView.xib */,
 			);
 			path = PriceView;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 		86CC956128B888DA008D71A4 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				86CC955328B87564008D71A4 /* LoanTopView */,
 				86CC957428B8A7E0008D71A4 /* PropertiesView */,
 				86CC958C28B8BFB9008D71A4 /* CustomButton.swift */,
 			);
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC957E28B8AC76008D71A4 /* FeeView.swift */,
-				86CC958228B8ADDD008D71A4 /* FeeViewXIB.xib */,
+				86CC958228B8ADDD008D71A4 /* FeeView.xib */,
 			);
 			path = FeeView;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC958728B8BDA2008D71A4 /* AgreementView.swift */,
-				86CC958928B8BDAE008D71A4 /* AgreementViewXIB.xib */,
+				86CC958928B8BDAE008D71A4 /* AgreementView.xib */,
 			);
 			path = AgreementView;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC958F28B8CC69008D71A4 /* SignButton.swift */,
-				86CC959128B8CC82008D71A4 /* SignButtonXIB.xib */,
+				86CC959128B8CC82008D71A4 /* SignButton.xib */,
 			);
 			path = SignButton;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC959828B8D610008D71A4 /* ContractDetailView.swift */,
-				86CC959E28B8D76F008D71A4 /* ContractDetailViewXIB.xib */,
+				86CC959E28B8D76F008D71A4 /* ContractDetailView.xib */,
 			);
 			path = ContractDetailView;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC95A328B8D9B0008D71A4 /* RejectButton.swift */,
-				86CC95A128B8D98C008D71A4 /* RejectButtonXIB.xib */,
+				86CC95A128B8D98C008D71A4 /* RejectButton.xib */,
 			);
 			path = RejectButton;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */,
-				86CC95A628B8DB05008D71A4 /* MoreDetailViewXIB.xib */,
+				86CC95A628B8DB05008D71A4 /* MoreDetailView.xib */,
 			);
 			path = MoreDetailView;
 			sourceTree = "<group>";
@@ -304,13 +304,13 @@
 				86CC955028B86942008D71A4 /* LoanTopView.xib in Resources */,
 				86CC955928B87CC8008D71A4 /* PriceView.xib in Resources */,
 				86CC953F28B86625008D71A4 /* LaunchScreen.storyboard in Resources */,
-				86CC958328B8ADDD008D71A4 /* FeeViewXIB.xib in Resources */,
-				86CC959228B8CC82008D71A4 /* SignButtonXIB.xib in Resources */,
+				86CC958328B8ADDD008D71A4 /* FeeView.xib in Resources */,
+				86CC959228B8CC82008D71A4 /* SignButton.xib in Resources */,
 				86CC953C28B86625008D71A4 /* Assets.xcassets in Resources */,
-				86CC95A228B8D98C008D71A4 /* RejectButtonXIB.xib in Resources */,
-				86CC959F28B8D76F008D71A4 /* ContractDetailViewXIB.xib in Resources */,
-				86CC958A28B8BDAE008D71A4 /* AgreementViewXIB.xib in Resources */,
-				86CC95A728B8DB05008D71A4 /* MoreDetailViewXIB.xib in Resources */,
+				86CC95A228B8D98C008D71A4 /* RejectButton.xib in Resources */,
+				86CC959F28B8D76F008D71A4 /* ContractDetailView.xib in Resources */,
+				86CC958A28B8BDAE008D71A4 /* AgreementView.xib in Resources */,
+				86CC95A728B8DB05008D71A4 /* MoreDetailView.xib in Resources */,
 				86CC953A28B86623008D71A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
