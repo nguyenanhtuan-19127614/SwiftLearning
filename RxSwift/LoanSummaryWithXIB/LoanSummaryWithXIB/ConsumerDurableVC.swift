@@ -33,9 +33,6 @@ class ConsumerDurableVC: UIViewController {
         addLayout()
         
     }
-    
- 
-
-
+   
 }
 
