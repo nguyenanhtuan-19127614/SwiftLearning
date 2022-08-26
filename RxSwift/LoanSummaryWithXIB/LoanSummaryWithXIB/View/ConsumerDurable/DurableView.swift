@@ -1,17 +1,18 @@
 //
-//  LoanTopView.swift
+//  DurableView.swift
 //  LoanSummaryWithXIB
 //
 //  Created by Wee on 26/08/2022.
 //
 
+import Foundation
 import UIKit
 
-class LoanTopView: UIView {
+class DurableView: UIView {
     
     @IBOutlet var contentView: UIView!
     
-    let XIB_NAME = "LoanTopView"
+    let XIB_NAME = "DurableViewXIB"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,4 +32,5 @@ class LoanTopView: UIView {
         contentView.fixInView(self)
         
     }
+    
 }

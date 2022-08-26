@@ -18,6 +18,10 @@
 		86CC955228B86F8A008D71A4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC955128B86F8A008D71A4 /* UIViewExtension.swift */; };
 		86CC955928B87CC8008D71A4 /* PriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC955828B87CC8008D71A4 /* PriceView.xib */; };
 		86CC955B28B8834F008D71A4 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC955A28B8834F008D71A4 /* PriceView.swift */; };
+		86CC956828B88C51008D71A4 /* PropertiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC956728B88C51008D71A4 /* PropertiesView.xib */; };
+		86CC956A28B88C66008D71A4 /* PropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC956928B88C66008D71A4 /* PropertiesView.swift */; };
+		86CC957828B8A80E008D71A4 /* DurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC957728B8A80E008D71A4 /* DurableView.swift */; };
+		86CC957A28B8AA8F008D71A4 /* DurableViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC957928B8AA8F008D71A4 /* DurableViewXIB.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		86CC955128B86F8A008D71A4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		86CC955828B87CC8008D71A4 /* PriceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceView.xib; sourceTree = "<group>"; };
 		86CC955A28B8834F008D71A4 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		86CC956728B88C51008D71A4 /* PropertiesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesView.xib; sourceTree = "<group>"; };
+		86CC956928B88C66008D71A4 /* PropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesView.swift; sourceTree = "<group>"; };
+		86CC957728B8A80E008D71A4 /* DurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurableView.swift; sourceTree = "<group>"; };
+		86CC957928B8AA8F008D71A4 /* DurableViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DurableViewXIB.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		86CC953128B86623008D71A4 /* LoanSummaryWithXIB */ = {
 			isa = PBXGroup;
 			children = (
+				86CC955C28B888A9008D71A4 /* Extension */,
 				86CC954828B866E7008D71A4 /* View */,
 				86CC953228B86623008D71A4 /* AppDelegate.swift */,
 				86CC953428B86623008D71A4 /* SceneDelegate.swift */,
@@ -81,7 +90,7 @@
 		86CC954828B866E7008D71A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				86CC955128B86F8A008D71A4 /* UIViewExtension.swift */,
+				86CC956128B888DA008D71A4 /* General */,
 				86CC954A28B86819008D71A4 /* PersonalLoan */,
 				86CC954928B86801008D71A4 /* ConsumerDurable */,
 			);
@@ -93,6 +102,8 @@
 			children = (
 				86CC955528B87CAF008D71A4 /* PriceView */,
 				86CC955328B87564008D71A4 /* LoanTopView */,
+				86CC957928B8AA8F008D71A4 /* DurableViewXIB.xib */,
+				86CC957728B8A80E008D71A4 /* DurableView.swift */,
 			);
 			path = ConsumerDurable;
 			sourceTree = "<group>";
@@ -120,6 +131,31 @@
 				86CC955A28B8834F008D71A4 /* PriceView.swift */,
 			);
 			path = PriceView;
+			sourceTree = "<group>";
+		};
+		86CC955C28B888A9008D71A4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				86CC955128B86F8A008D71A4 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		86CC956128B888DA008D71A4 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				86CC957428B8A7E0008D71A4 /* PropertiesView */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		86CC957428B8A7E0008D71A4 /* PropertiesView */ = {
+			isa = PBXGroup;
+			children = (
+				86CC956728B88C51008D71A4 /* PropertiesView.xib */,
+				86CC956928B88C66008D71A4 /* PropertiesView.swift */,
+			);
+			path = PropertiesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CC957A28B8AA8F008D71A4 /* DurableViewXIB.xib in Resources */,
+				86CC956828B88C51008D71A4 /* PropertiesView.xib in Resources */,
 				86CC955028B86942008D71A4 /* LoanTopView.xib in Resources */,
 				86CC955928B87CC8008D71A4 /* PriceView.xib in Resources */,
 				86CC953F28B86625008D71A4 /* LaunchScreen.storyboard in Resources */,
@@ -201,6 +239,8 @@
 				86CC953728B86623008D71A4 /* ViewController.swift in Sources */,
 				86CC953328B86623008D71A4 /* AppDelegate.swift in Sources */,
 				86CC953528B86623008D71A4 /* SceneDelegate.swift in Sources */,
+				86CC957828B8A80E008D71A4 /* DurableView.swift in Sources */,
+				86CC956A28B88C66008D71A4 /* PropertiesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

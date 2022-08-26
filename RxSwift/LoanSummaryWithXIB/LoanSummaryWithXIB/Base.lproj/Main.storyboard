@@ -3,97 +3,15 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoanSummaryWithXIB" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbH-Z0-0HT">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KYV-Vp-k5H">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="650"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEk-yB-gRM" customClass="LoanTopView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="C3g-jH-l38"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2b3-30-R1I">
-                                                <rect key="frame" x="0.0" y="150" width="414" height="250"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-LD-ZsJ">
-                                                        <rect key="frame" x="60" y="10" width="294" height="230"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="YLk-LD-ZsJ" secondAttribute="trailing" constant="60" id="CIp-7Y-Jdg"/>
-                                                    <constraint firstItem="YLk-LD-ZsJ" firstAttribute="leading" secondItem="2b3-30-R1I" secondAttribute="leading" constant="60" id="Ney-aU-f5i"/>
-                                                    <constraint firstAttribute="bottom" secondItem="YLk-LD-ZsJ" secondAttribute="bottom" constant="10" id="Xs7-hd-XLG"/>
-                                                    <constraint firstAttribute="height" constant="250" id="i6P-Dq-R05"/>
-                                                    <constraint firstItem="YLk-LD-ZsJ" firstAttribute="top" secondItem="2b3-30-R1I" secondAttribute="top" constant="10" id="izg-0o-sX7"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHT-dz-BDW">
-                                                <rect key="frame" x="0.0" y="400" width="414" height="250"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5h-aY-KtN" customClass="PriceView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
-                                                        <rect key="frame" x="30" y="0.0" width="354" height="250"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    </view>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="CJK-r5-wl9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="v5h-aY-KtN" secondAttribute="trailing" constant="30" id="HSe-3H-Cvz"/>
-                                                    <constraint firstItem="v5h-aY-KtN" firstAttribute="top" secondItem="mHT-dz-BDW" secondAttribute="top" id="Yda-wI-GMv"/>
-                                                    <constraint firstAttribute="bottom" secondItem="v5h-aY-KtN" secondAttribute="bottom" id="ere-ZZ-PsA"/>
-                                                    <constraint firstItem="v5h-aY-KtN" firstAttribute="leading" secondItem="mHT-dz-BDW" secondAttribute="leading" constant="30" id="hSW-Tu-GVc"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="KYV-Vp-k5H" firstAttribute="top" secondItem="bbH-Z0-0HT" secondAttribute="top" id="47P-ac-446"/>
-                                    <constraint firstAttribute="bottom" secondItem="KYV-Vp-k5H" secondAttribute="bottom" id="9A2-iI-1ah"/>
-                                    <constraint firstItem="KYV-Vp-k5H" firstAttribute="height" secondItem="bbH-Z0-0HT" secondAttribute="height" priority="250" id="Vou-az-SHk"/>
-                                    <constraint firstItem="KYV-Vp-k5H" firstAttribute="width" secondItem="bbH-Z0-0HT" secondAttribute="width" id="gJb-34-LAn"/>
-                                    <constraint firstAttribute="trailing" secondItem="KYV-Vp-k5H" secondAttribute="trailing" priority="250" id="oYV-Mt-IQ9"/>
-                                    <constraint firstItem="KYV-Vp-k5H" firstAttribute="leading" secondItem="bbH-Z0-0HT" secondAttribute="leading" priority="250" id="xC2-OL-7i6"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bbH-Z0-0HT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0ek-pF-MV8"/>
-                            <constraint firstItem="bbH-Z0-0HT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IC6-Mx-oeV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bbH-Z0-0HT" secondAttribute="trailing" id="dSL-5G-Heb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bbH-Z0-0HT" secondAttribute="bottom" id="sdz-dN-Hzg"/>
-                        </constraints>
-                    </view>
-                </viewController>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoanSummaryWithXIB" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="product" width="878" height="828"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
