@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgreementView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
             <connections>
                 <outlet property="agreementLabel" destination="k6A-OX-lfO" id="Z6S-8o-t2i"/>
+                <outlet property="checkbox" destination="RWs-47-1xu" id="ohd-mp-iEo"/>
                 <outlet property="contentView" destination="VVI-Na-iJS" id="wM0-bE-8Tj"/>
             </connections>
         </placeholder>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWs-47-1xu">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWs-47-1xu" customClass="CustomButton" customModule="LoanSummaryWithXIB" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="eZO-Vp-CLA"/>
@@ -27,6 +28,14 @@
                     </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="gray"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="checkHandle:" destination="-1" eventType="touchUpInside" id="4ML-82-mFM"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6A-OX-lfO">
                     <rect key="frame" x="40" y="15.5" width="39.5" height="19.5"/>

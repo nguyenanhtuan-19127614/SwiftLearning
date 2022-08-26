@@ -1,38 +1,57 @@
 //
-//  ViewController.swift
+//  CustomerDurableVC2.swift
 //  LoanSummaryWithXIB
 //
 //  Created by Wee on 26/08/2022.
 //
 
+import Foundation
 import UIKit
 
-class ConsumerDurableVC: UIViewController {
+class CustomerDurableVC: UIViewController {
+    private let scrollView = UIScrollView()
+    private var contentView = ConsumerDurableContentView()
+    //let contentView = ConsumerDurableContentView()
     
-    let mainView = DurableView()
+    func addSubViews() {
+        self.view.addSubview(scrollView)
+        scrollView.addSubview(contentView)
+    }
     
-    private func addLayout() {
+    func addLayout() {
         
-        mainView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             
-            mainView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-            mainView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
-            mainView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
-            mainView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor)
-        
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            scrollView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            scrollView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
+
+            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+            contentView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            
         ])
-        
     }
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
+        self.view.backgroundColor = .white
        
-        self.view.addSubview(mainView)
+        addSubViews()
         addLayout()
-        
+
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.topItem?.title = "Loan Summary"
+    }
+  
    
 }
-

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                let window = UIWindow(windowScene: windowScene)
                
                //let mainVC = ConsumerDurableVC()
-               let mainVC = CustomerDurableVC2()
+               let mainVC = CustomerDurableVC()
                
         
                let nav = UINavigationController(rootViewController: mainVC)

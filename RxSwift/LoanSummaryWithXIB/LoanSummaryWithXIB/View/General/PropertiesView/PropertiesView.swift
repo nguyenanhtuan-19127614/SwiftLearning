@@ -10,9 +10,9 @@ import UIKit
 
 class PropertiesView: UIView {
     
-    let XIB_NAME = "PropertiesView"
-    
+    @IBOutlet weak var infoName: UILabel!
     @IBOutlet var contentView: UIView!
+    let XIB_NAME = "PropertiesView"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,6 +24,10 @@ class PropertiesView: UIView {
         super.init(coder: aDecoder)
         self.commonInit()
             
+    }
+    
+    func setInfoName(text: String) {
+        infoName.text = text
     }
     
     func commonInit() {

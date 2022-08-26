@@ -29,10 +29,37 @@ class ConsumerDurableContentView: UIView {
     
     //PropertiesView
     private let infoViewContainer = UIView()
-    private let brandView = PropertiesView()
-    private let modelView = PropertiesView()
-    private let interestRateView = PropertiesView()
-    private let insuranceView = PropertiesView()
+    private let brandView: PropertiesView = {
+        
+        let view = PropertiesView()
+        view.setInfoName(text: "Brand")
+        return view
+        
+    }()
+    
+    private let modelView: PropertiesView = {
+        
+        let view = PropertiesView()
+        view.setInfoName(text: "Model")
+        return view
+        
+    }()
+    
+    private let interestRateView: PropertiesView = {
+        
+        let view = PropertiesView()
+        view.setInfoName(text: "Interest rate (monthly)")
+        return view
+        
+    }()
+    
+    private let insuranceView: PropertiesView = {
+        
+        let view = PropertiesView()
+        view.setInfoName(text: "Insurance")
+        return view
+        
+    }()
     
     //Fee view
     private let terminateFeeView = FeeView()

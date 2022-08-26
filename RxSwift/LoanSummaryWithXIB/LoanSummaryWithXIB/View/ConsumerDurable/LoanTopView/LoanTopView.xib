@@ -26,46 +26,46 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIh-bW-wfJ">
-                    <rect key="frame" x="30" y="92" width="290" height="24"/>
+                    <rect key="frame" x="30" y="92" width="290" height="25.5"/>
                     <color key="tintColor" name="AccentColor"/>
                     <attributedString key="attributedText">
                         <fragment content="Offer expires in ">
                             <attributes>
                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" metaFont="system" size="20"/>
+                                <font key="NSFont" metaFont="system" size="23"/>
                             </attributes>
                         </fragment>
                         <fragment content="{n} days">
                             <attributes>
                                 <color key="NSColor" red="0.3181916657831152" green="1" blue="0.31620915553982998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" metaFont="system" size="20"/>
+                                <font key="NSFont" metaFont="system" size="23"/>
                             </attributes>
                         </fragment>
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axt-up-cYE">
-                    <rect key="frame" x="30" y="126" width="106" height="16"/>
+                    <rect key="frame" x="30" y="147.5" width="121" height="18"/>
                     <color key="backgroundColor" red="0.96078437569999997" green="0.96078437569999997" blue="0.96078437569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <attributedString key="attributedText">
                         <fragment content="App ID:">
                             <attributes>
                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" size="14" name=".SFNS-Bold"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                         <fragment content=" ">
                             <attributes>
                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <font key="NSFont" size="14" name=".SFNS-Bold"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
                         <fragment content="########">
                             <attributes>
                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <font key="NSFont" size="14" name=".SFNS-Bold"/>
+                                <font key="NSFont" metaFont="system" size="16"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -90,7 +90,7 @@
             <constraints>
                 <constraint firstItem="QIh-bW-wfJ" firstAttribute="top" secondItem="bEp-BV-KZS" secondAttribute="bottom" constant="8" id="Ii9-ZO-RiE"/>
                 <constraint firstItem="prb-FF-8c8" firstAttribute="trailing" secondItem="bEp-BV-KZS" secondAttribute="trailing" constant="30" id="LJz-rF-ApH"/>
-                <constraint firstItem="axt-up-cYE" firstAttribute="top" secondItem="QIh-bW-wfJ" secondAttribute="bottom" constant="10" id="SqT-NZ-ZD5"/>
+                <constraint firstItem="axt-up-cYE" firstAttribute="top" secondItem="QIh-bW-wfJ" secondAttribute="bottom" constant="30" id="SqT-NZ-ZD5"/>
                 <constraint firstItem="bEp-BV-KZS" firstAttribute="top" secondItem="prb-FF-8c8" secondAttribute="top" constant="10" id="epI-Ap-mKB"/>
                 <constraint firstItem="QIh-bW-wfJ" firstAttribute="leading" secondItem="prb-FF-8c8" secondAttribute="leading" constant="30" id="gsW-yF-2Lj"/>
                 <constraint firstItem="QIh-bW-wfJ" firstAttribute="top" secondItem="bEp-BV-KZS" secondAttribute="bottom" constant="8" id="nwO-Lh-I0r"/>

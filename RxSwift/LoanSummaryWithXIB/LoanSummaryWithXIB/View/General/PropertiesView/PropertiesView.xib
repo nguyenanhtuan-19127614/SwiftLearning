@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertiesView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="N3r-J7-J0k" id="44b-rb-q78"/>
+                <outlet property="infoName" destination="QgU-vb-3Q9" id="LZ3-tW-6Ac"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
