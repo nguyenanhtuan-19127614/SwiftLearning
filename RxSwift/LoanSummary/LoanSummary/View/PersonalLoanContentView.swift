@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 class PersonalLoanContentView: UIView {
     
-    private let numberOffers = 8
+    
    
     //Top View
     private let topView = LoanTopView()
@@ -37,20 +37,23 @@ class PersonalLoanContentView: UIView {
         
     }()
     
-    //Offer View
-    
-    //MARK: TEST==================================
-   
+    //MARK: Offer View
+    private let numberOffers = 3
     private var offerViewArray: [OfferView] = []
     private func createOfferViews(numbers: Int) {
         
-        for _ in 1...numberOffers {
+        if numberOffers == 0 {
+            return
+        }
+        
+        for i in 1...numberOffers {
             
             let offerView: OfferView = {
                 
                 let view = OfferView()
                 view.translatesAutoresizingMaskIntoConstraints = false
                 view.isUserInteractionEnabled = true
+                view.setupOfferLabel(text: "OFFER \(i)")
                 return view
                 
             }()
@@ -70,32 +73,6 @@ class PersonalLoanContentView: UIView {
     }
     
     //MARK: ==================================
-    
-    private let offerView1: OfferView = {
-        
-        let view = OfferView()
-        view.isUserInteractionEnabled = true
-        return view
-        
-    }()
-    
-    private let offerView2: OfferView = {
-        
-        let view = OfferView()
-        view.isUserInteractionEnabled = true
-        return view
-        
-    }()
-    
-    private let offerView3: OfferView = {
-        
-        let view = OfferView()
-        view.isUserInteractionEnabled = true
-        return view
-        
-    }()
-    
-    private var offerViewList: [OfferView] = []
     
     //Offer View
     private let interestView1 = InterestRateView()
@@ -153,11 +130,10 @@ class PersonalLoanContentView: UIView {
         self.addSubview(topView)
         self.addSubview(loanImage)
         self.addSubview(selectOfferLabel)
+        
         self.createOfferViews(numbers: self.numberOffers)
         self.addOfferViews()
-//        self.addSubview(offerView1)
-//        self.addSubview(offerView2)
-//        self.addSubview(offerView3)
+        
         self.addSubview(interestView1)
         self.addSubview(interestView2)
         self.addSubview(loanInfoView)
@@ -172,9 +148,6 @@ class PersonalLoanContentView: UIView {
         topView.translatesAutoresizingMaskIntoConstraints = false
         loanImage.translatesAutoresizingMaskIntoConstraints = false
         selectOfferLabel.translatesAutoresizingMaskIntoConstraints = false
-//        offerView1.translatesAutoresizingMaskIntoConstraints = false
-//        offerView2.translatesAutoresizingMaskIntoConstraints = false
-//        offerView3.translatesAutoresizingMaskIntoConstraints = false
         interestView1.translatesAutoresizingMaskIntoConstraints = false
         interestView2.translatesAutoresizingMaskIntoConstraints = false
         confirmButton.translatesAutoresizingMaskIntoConstraints = false
@@ -196,28 +169,11 @@ class PersonalLoanContentView: UIView {
          
             selectOfferLabel.topAnchor.constraint(equalTo: loanImage.bottomAnchor, constant: 20),
             selectOfferLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-        
-//            offerView1.topAnchor.constraint(equalTo: selectOfferLabel.bottomAnchor, constant: 20),
-//            offerView1.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            offerView1.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
-//            offerView1.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
-//            offerView1.heightAnchor.constraint(equalTo: loanImage.heightAnchor),
-//
-//            offerView2.topAnchor.constraint(equalTo: offerView1.bottomAnchor, constant: 20),
-//            offerView2.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            offerView2.widthAnchor.constraint(equalTo: offerView1.widthAnchor),
-//            offerView2.heightAnchor.constraint(equalTo: offerView1.heightAnchor),
-//
-//            offerView3.topAnchor.constraint(equalTo: offerView2.bottomAnchor, constant: 20),
-//            offerView3.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            offerView3.widthAnchor.constraint(equalTo: offerView1.widthAnchor),
-//            offerView3.heightAnchor.constraint(equalTo: offerView1.heightAnchor),
-            
-            
             
         ])
         
-        if offerViewArray.count != 0 {
+        //Offer View Layout
+        if !offerViewArray.isEmpty {
             
             NSLayoutConstraint.activate([
                 
@@ -229,32 +185,60 @@ class PersonalLoanContentView: UIView {
                 
             ])
             
-            for i in 1...offerViewArray.count - 1 {
+            if offerViewArray.count != 1 {
                 
-                let j = i - 1
-                
-                NSLayoutConstraint.activate([
+                for i in 1...offerViewArray.count - 1 {
                     
-                    offerViewArray[i].topAnchor.constraint(equalTo: offerViewArray[j].bottomAnchor, constant: 20),
-                    offerViewArray[i].centerXAnchor.constraint(equalTo: self.centerXAnchor),
-                    offerViewArray[i].widthAnchor.constraint(equalTo: offerViewArray[0].widthAnchor),
-                    offerViewArray[i].heightAnchor.constraint(equalTo: offerViewArray[0].heightAnchor),
-
-                ])
-               
+                    let j = i - 1
+                    
+                    NSLayoutConstraint.activate([
+                        
+                        offerViewArray[i].topAnchor.constraint(equalTo: offerViewArray[j].bottomAnchor, constant: 20),
+                        offerViewArray[i].centerXAnchor.constraint(equalTo: self.centerXAnchor),
+                        offerViewArray[i].widthAnchor.constraint(equalTo: offerViewArray[0].widthAnchor),
+                        offerViewArray[i].heightAnchor.constraint(equalTo: offerViewArray[0].heightAnchor),
+                
+                    ])
+                   
+                }
+                
             }
+            
+            NSLayoutConstraint.activate([
+        
+                interestView1.topAnchor.constraint(equalTo: offerViewArray[offerViewArray.count - 1].bottomAnchor, constant: 20),
+                interestView1.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+                interestView1.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
+                interestView1.heightAnchor.constraint(equalTo: loanImage.heightAnchor, multiplier: 0.3),
+                
+                interestView2.topAnchor.constraint(equalTo: offerViewArray[offerViewArray.count - 1].bottomAnchor, constant: 20),
+                interestView2.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+                interestView2.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -30),
+                interestView2.heightAnchor.constraint(equalTo: interestView1.heightAnchor),
+
+            ])
+            
+        } else {
+            
+            NSLayoutConstraint.activate([
+                
+              
+                
+                interestView1.topAnchor.constraint(equalTo: selectOfferLabel.bottomAnchor, constant: 20),
+                interestView1.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+                interestView1.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
+                interestView1.heightAnchor.constraint(equalTo: loanImage.heightAnchor, multiplier: 0.3),
+                
+                interestView2.topAnchor.constraint(equalTo: selectOfferLabel.bottomAnchor, constant: 20),
+                interestView2.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
+                interestView2.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -30),
+                interestView2.heightAnchor.constraint(equalTo: interestView1.heightAnchor),
+
+            ])
+           
         }
 
         NSLayoutConstraint.activate([
-            interestView1.topAnchor.constraint(equalTo: offerViewArray[offerViewArray.count - 1].bottomAnchor, constant: 20),
-            interestView1.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
-            interestView1.leadingAnchor.constraint(equalTo: self.leadingAnchor,constant: 30),
-            interestView1.heightAnchor.constraint(equalTo: offerViewArray[offerViewArray.count - 1].heightAnchor, multiplier: 0.3),
-            
-            interestView2.topAnchor.constraint(equalTo: offerViewArray[offerViewArray.count - 1].bottomAnchor, constant: 20),
-            interestView2.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4),
-            interestView2.trailingAnchor.constraint(equalTo: self.trailingAnchor,constant: -30),
-            interestView2.heightAnchor.constraint(equalTo: interestView1.heightAnchor),
             
             loanInfoView.topAnchor.constraint(equalTo: interestView2.bottomAnchor, constant: 10),
             loanInfoView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
@@ -263,7 +247,8 @@ class PersonalLoanContentView: UIView {
             
             confirmButton.topAnchor.constraint(equalTo: loanInfoView.bottomAnchor, constant: 30),
             confirmButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            confirmButton.widthAnchor.constraint(equalTo:  offerViewArray[0].widthAnchor),
+            confirmButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 30),
+            confirmButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30),
             confirmButton.heightAnchor.constraint(equalToConstant: 50),
             
             rejectButton.topAnchor.constraint(equalTo: confirmButton.bottomAnchor, constant: 20),
@@ -286,27 +271,22 @@ class PersonalLoanContentView: UIView {
         self.backgroundColor = .white
         
         topView.setupViewLabel(text: "Personal Loan")
-        offerViewList = [offerView1,offerView2,offerView3]
+    
         addSubViews()
         addLayout()
         
-//        let offerView1Tap = UITapGestureRecognizer(target: self, action: #selector(offerView1Tap(sender:)))
-//        let offerView2Tap = UITapGestureRecognizer(target: self, action: #selector(offerView2Tap(sender:)))
-//        let offerView3Tap = UITapGestureRecognizer(target: self, action: #selector(offerView3Tap(sender:)))
-//
-//        offerView1.addGestureRecognizer(offerView1Tap)
-//        offerView2.addGestureRecognizer(offerView2Tap)
-//        offerView3.addGestureRecognizer(offerView3Tap)
+        if !self.offerViewArray.isEmpty {
+            
+            for i in 0...offerViewArray.count - 1 {
         
-        for i in 0...offerViewArray.count - 1 {
-           
-            
-            
-            let offerViewTap = UITapGestureRecognizer(target: self, action: #selector(offerViewTap(sender:)))
-            offerViewArray[i].addGestureRecognizer(offerViewTap)
-            offerViewArray[i].tag = i
+                let offerViewTap = UITapGestureRecognizer(target: self, action: #selector(offerViewTap(sender:)))
+                offerViewArray[i].addGestureRecognizer(offerViewTap)
+                offerViewArray[i].tag = i
+                
+            }
             
         }
+        
 
     }
     
@@ -353,23 +333,7 @@ class PersonalLoanContentView: UIView {
         
     }
     
-//    @objc func offerView1Tap(sender : UITapGestureRecognizer) {
-//
-//        self.handleOfferViewTap(index: 0)
-//
-//    }
-//    @objc func offerView2Tap(sender : UITapGestureRecognizer) {
-//
-//        self.handleOfferViewTap(index: 1)
-//
-//    }
-//    @objc func offerView3Tap(sender : UITapGestureRecognizer) {
-//
-//        self.handleOfferViewTap(index: 2)
-//
-//    }
-//
-    
+
     func loadData() {
         
     }

@@ -20,11 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                       
         let window = UIWindow(windowScene: windowScene)
         
-        let mainVC = ViewController()
+        let PersonalLoanVC = ViewController()
         //mainVC.setupContentView(type: .ConsumerDurable)
-        mainVC.setupContentView(type: .PersonalLoan)
+        PersonalLoanVC.setupContentView(type: .PersonalLoan)
         
-        let nav = UINavigationController(rootViewController: mainVC)
+        let ConsumerDurableVC = ViewController()
+        ConsumerDurableVC.setupContentView(type: .ConsumerDurable)
+        
+        let nav = UINavigationController(rootViewController: PersonalLoanVC)
         nav.navigationBar.isTranslucent = false
         nav.navigationBar.backgroundColor = .white
         

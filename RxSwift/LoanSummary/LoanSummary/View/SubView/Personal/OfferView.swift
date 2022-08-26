@@ -99,6 +99,12 @@ class OfferView: UIView {
         
     }()
     
+    func setupOfferLabel(text: String) {
+        
+        self.offerLabel.text = text
+        
+    }
+    
     private func addSubViews() {
         
         self.addSubview(radioButton)
