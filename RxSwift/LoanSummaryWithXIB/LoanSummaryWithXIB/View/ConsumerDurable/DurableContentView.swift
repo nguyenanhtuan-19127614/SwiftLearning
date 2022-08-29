@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ConsumerDurableContentView: UIView {
+class DurableContentView: UIView {
     
     //Top View
     private let topView = LoanTopView()

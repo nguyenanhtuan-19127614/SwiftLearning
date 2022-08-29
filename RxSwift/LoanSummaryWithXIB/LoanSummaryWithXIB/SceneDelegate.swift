@@ -18,20 +18,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                          return
                      }
                              
-               let window = UIWindow(windowScene: windowScene)
-               
-               //let mainVC = ConsumerDurableVC()
-               let mainVC = CustomerDurableVC()
-               
+        let window = UIWindow(windowScene: windowScene)
         
-               let nav = UINavigationController(rootViewController: mainVC)
+        //let mainVC = ConsumerDurableVC()
+        let mainVC = CustomerDurableVC()
+        mainVC.setupContentView(contentType: .PersonalLoan)
+ 
+        let nav = UINavigationController(rootViewController: mainVC)
+ 
+        nav.navigationBar.isTranslucent = false
+        nav.navigationBar.backgroundColor = .white
         
-               nav.navigationBar.isTranslucent = false
-               nav.navigationBar.backgroundColor = .white
-               
-               window.rootViewController = nav
-               window.makeKeyAndVisible()
-               self.window = window
+        window.rootViewController = nav
+        window.makeKeyAndVisible()
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

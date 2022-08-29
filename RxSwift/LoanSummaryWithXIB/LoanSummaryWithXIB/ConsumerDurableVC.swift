@@ -10,8 +10,24 @@ import UIKit
 
 class CustomerDurableVC: UIViewController {
     private let scrollView = UIScrollView()
-    private var contentView = ConsumerDurableContentView()
-    //let contentView = ConsumerDurableContentView()
+    private var contentView = UIView()
+    //private var contentView = DurableContentView()
+    //private var contentView = PersonalLoanView()
+   
+    func setupContentView(contentType: ContentViewType) {
+        
+        switch contentType {
+        case .ConsumerDurable:
+            
+            contentView = DurableContentView()
+            
+        case .PersonalLoan:
+            
+            contentView = PersonalLoanView()
+            
+        }
+        
+    }
     
     func addSubViews() {
         self.view.addSubview(scrollView)

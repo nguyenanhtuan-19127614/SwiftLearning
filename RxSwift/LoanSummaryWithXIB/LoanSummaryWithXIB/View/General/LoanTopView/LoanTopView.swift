@@ -10,6 +10,7 @@ import UIKit
 class LoanTopView: UIView {
     
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentName: UILabel!
     
     let XIB_NAME = "LoanTopView"
     
@@ -29,6 +30,12 @@ class LoanTopView: UIView {
         
         Bundle.main.loadNibNamed(XIB_NAME, owner: self)
         contentView.fixInView(self)
+        
+    }
+    
+    func setContentName(name: String) {
+        
+        contentName.text = name
         
     }
 }

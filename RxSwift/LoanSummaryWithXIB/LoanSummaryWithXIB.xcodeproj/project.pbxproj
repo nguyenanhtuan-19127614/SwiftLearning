@@ -34,6 +34,8 @@
 		86CC95A428B8D9B0008D71A4 /* RejectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A328B8D9B0008D71A4 /* RejectButton.swift */; };
 		86CC95A728B8DB05008D71A4 /* MoreDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86CC95A628B8DB05008D71A4 /* MoreDetailView.xib */; };
 		86CC95A928B8DB7D008D71A4 /* MoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */; };
+		86CC95AB28BC5738008D71A4 /* PersonalLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95AA28BC5738008D71A4 /* PersonalLoanView.swift */; };
+		86CC95AD28BC5963008D71A4 /* ContentViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC95AC28BC5963008D71A4 /* ContentViewType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		86CC95A328B8D9B0008D71A4 /* RejectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectButton.swift; sourceTree = "<group>"; };
 		86CC95A628B8DB05008D71A4 /* MoreDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreDetailView.xib; sourceTree = "<group>"; };
 		86CC95A828B8DB7D008D71A4 /* MoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreDetailView.swift; sourceTree = "<group>"; };
+		86CC95AA28BC5738008D71A4 /* PersonalLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalLoanView.swift; sourceTree = "<group>"; };
+		86CC95AC28BC5963008D71A4 /* ContentViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			children = (
 				86CC953228B86623008D71A4 /* AppDelegate.swift */,
 				86CC953428B86623008D71A4 /* SceneDelegate.swift */,
+				86CC95AC28BC5963008D71A4 /* ContentViewType.swift */,
 				86CC957B28B8AC1B008D71A4 /* ConsumerDurableVC.swift */,
 				86CC954828B866E7008D71A4 /* View */,
 				86CC955C28B888A9008D71A4 /* Extension */,
@@ -130,8 +135,6 @@
 				86CC95A528B8DAEB008D71A4 /* MoreDetailView */,
 				86CC958628B8BD8B008D71A4 /* AgreementView */,
 				86CC959728B8D5F7008D71A4 /* ContractDetailView */,
-				86CC958E28B8CC60008D71A4 /* SignButton */,
-				86CC95A028B8D96C008D71A4 /* RejectButton */,
 			);
 			path = ConsumerDurable;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 		86CC954A28B86819008D71A4 /* PersonalLoan */ = {
 			isa = PBXGroup;
 			children = (
+				86CC95AA28BC5738008D71A4 /* PersonalLoanView.swift */,
 			);
 			path = PersonalLoan;
 			sourceTree = "<group>";
@@ -172,6 +176,8 @@
 		86CC956128B888DA008D71A4 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				86CC958E28B8CC60008D71A4 /* AcceptButton */,
+				86CC95A028B8D96C008D71A4 /* RejectButton */,
 				86CC955328B87564008D71A4 /* LoanTopView */,
 				86CC957428B8A7E0008D71A4 /* PropertiesView */,
 				86CC958C28B8BFB9008D71A4 /* CustomButton.swift */,
@@ -206,13 +212,13 @@
 			path = AgreementView;
 			sourceTree = "<group>";
 		};
-		86CC958E28B8CC60008D71A4 /* SignButton */ = {
+		86CC958E28B8CC60008D71A4 /* AcceptButton */ = {
 			isa = PBXGroup;
 			children = (
 				86CC958F28B8CC69008D71A4 /* SignButton.swift */,
 				86CC959128B8CC82008D71A4 /* SignButton.xib */,
 			);
-			path = SignButton;
+			path = AcceptButton;
 			sourceTree = "<group>";
 		};
 		86CC959728B8D5F7008D71A4 /* ContractDetailView */ = {
@@ -332,8 +338,10 @@
 				86CC95A928B8DB7D008D71A4 /* MoreDetailView.swift in Sources */,
 				86CC957F28B8AC76008D71A4 /* FeeView.swift in Sources */,
 				86CC957C28B8AC1B008D71A4 /* ConsumerDurableVC.swift in Sources */,
+				86CC95AB28BC5738008D71A4 /* PersonalLoanView.swift in Sources */,
 				86CC958D28B8BFB9008D71A4 /* CustomButton.swift in Sources */,
 				86CC959028B8CC69008D71A4 /* SignButton.swift in Sources */,
+				86CC95AD28BC5963008D71A4 /* ContentViewType.swift in Sources */,
 				86CC959928B8D610008D71A4 /* ContractDetailView.swift in Sources */,
 				86CC958828B8BDA2008D71A4 /* AgreementView.swift in Sources */,
 				86CC956A28B88C66008D71A4 /* PropertiesView.swift in Sources */,

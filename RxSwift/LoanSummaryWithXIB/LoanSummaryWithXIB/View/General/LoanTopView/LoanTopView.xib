@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoanTopView" customModule="LoanSummaryWithXIB" customModuleProvider="target">
             <connections>
+                <outlet property="contentName" destination="bEp-BV-KZS" id="fXJ-gb-IMn"/>
                 <outlet property="contentView" destination="EF2-g5-13s" id="jGZ-ts-lbh"/>
             </connections>
         </placeholder>
